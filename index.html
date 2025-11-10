@@ -212,19 +212,68 @@
 
         // Datos de Grupos (Actualizados con la adición del GRUPO 13)
         const grupos = [
-            { nombre: "GRUPO 1", area: "Líderes", descripcion: "Gerentes Generales de Perú y Colombia.", paises: ["PE", "CO"] },
-            { nombre: "GRUPO 2", area: "Finanzas y Contabilidad", descripcion: "Jefes, Analistas y Tesorería de Administración y Finanzas.", paises: ["PE", "CO"] },
-            { nombre: "GRUPO 3", area: "Facturación y Cobranza", descripcion: "Personal de Facturación, Crédito y Cobranza.", paises: ["PE", "CO"] },
-            { nombre: "GRUPO 4", area: "TI", descripcion: "Analistas Informáticos.", paises: ["PE"] },
-            { nombre: "GRUPO 5", area: "Comercial", descripcion: "Gerentes, KAMs y Ejecutivos de Venta de diferentes líneas.", paises: ["PE", "CO"] },
-            { nombre: "GRUPO 6", area: "Operaciones", descripcion: "Jefes y Asistentes de Operaciones (almacén, logística).", paises: ["PE"] },
-            { nombre: "GRUPO 7", area: "Comex", descripcion: "Jefes y Asistentes de Comercio Exterior.", paises: ["PE"] },
-            { nombre: "GRUPO 8", area: "Operaciones y Comex", descripcion: "Personal de Operaciones y Comex en Colombia.", paises: ["CO"] },
-            { nombre: "GRUPO 9", area: "Tesorería", descripcion: "Personal clave de Tesorería.", paises: ["PE", "CO"] },
-            { nombre: "GRUPO 10", area: "Facturación", descripcion: "Personal clave de Facturación.", paises: ["PE", "CO"] },
-            { nombre: "GRUPO 11", area: "Compras", descripcion: "Personal clave de Compras y Suministros.", paises: ["PE", "CO"] },
-            { nombre: "GRUPO 12", area: "Control", descripcion: "Control de Gestión / Lideres de Proceso para la validación final.", paises: ["PE", "CO"] },
-            { nombre: "GRUPO 13", area: "Inventario", descripcion: "Personal clave de Inventario y Control de Almacén.", paises: ["PE", "CO"] } // Nuevo grupo añadido
+            { nombre: "GRUPO 1", area: "Líderes", paises: ["PE", "CO"], miembros: [
+                { nombre: "Juan Molero", pais: "Peru", cargo: "Gerente General" },
+                { nombre: "Clara Juliana Gomez", pais: "Colombia", cargo: "Gerente General" }
+            ]},
+            { nombre: "GRUPO 2", area: "Finanzas y Contabilidad", paises: ["PE", "CO"], miembros: [
+                { nombre: "Patricia Arista", pais: "Peru", cargo: "Jefe Administración y Finanzas" },
+                { nombre: "Carlos Cueto", pais: "Peru", cargo: "Analista Contable" },
+                { nombre: "Nadia Vega", pais: "Peru", cargo: "Tesoreria" },
+                { nombre: "Paola Ramirez", pais: "Colombia", cargo: "Jefe de Administración y Finanzas" },
+                { nombre: "Camila Castiblanco", pais: "Colombia", cargo: "Contador" },
+                { nombre: "Liliana Alvarado", pais: "Colombia", cargo: "Analista Contable" }
+            ]},
+            { nombre: "GRUPO 3", area: "Facturación y Cobranza", paises: ["PE", "CO"], miembros: [
+                { nombre: "Virginia Vazques", pais: "Peru", cargo: "Facturación y Cobranza" },
+                { nombre: "Margareth Pérez", pais: "Colombia", cargo: "Credito Cobranza" }
+            ]},
+            { nombre: "GRUPO 4", area: "TI", paises: ["PE"], miembros: [
+                { nombre: "Alonso Cuba", pais: "Peru", cargo: "Analista Informatico" }
+            ]},
+            { nombre: "GRUPO 5", area: "Comercial", paises: ["PE", "CO"], miembros: [
+                { nombre: "Shiro Nemotto", pais: "Peru", cargo: "Gerente Comercial" },
+                { nombre: "Yolanda Carpio", pais: "Peru", cargo: "KAM" },
+                { nombre: "Kelly Cuevas", pais: "Peru", cargo: "Gerente Linea Mineria" },
+                { nombre: "Ricardo Parra", pais: "Peru", cargo: "KAM Coa-Pu" },
+                { nombre: "TBA", pais: "Peru", cargo: "KAM Feed" },
+                { nombre: "Tania Malpartida", pais: "Peru", cargo: "KAM Plásticos" },
+                { nombre: "TBA", pais: "Peru", cargo: "Ejecutivo de Ventas" },
+                { nombre: "Diana Trujillo", pais: "Colombia", cargo: "Gerente de Comercial" },
+                { nombre: "Angela Restrepo", pais: "Colombia", cargo: "KAM Quimicos Industriales" },
+                { nombre: "Lina Caro", pais: "Colombia", cargo: "KAM Quimicos Industriales" },
+                { nombre: "Rafael Posada", pais: "Colombia", cargo: "KAM Plastico" },
+                { nombre: "Santiago Saavedra", pais: "Colombia", cargo: "KAM Coating y Aceites" }
+            ]},
+            { nombre: "GRUPO 6", area: "Operaciones", paises: ["PE"], miembros: [
+                { nombre: "Daniel Flores", pais: "Peru", cargo: "Jefe de Operaciones" },
+                { nombre: "Juan Angeles", pais: "Peru", cargo: "Asistente de Operaciones" }
+            ]},
+            { nombre: "GRUPO 7", area: "Comex", paises: ["PE"], miembros: [
+                { nombre: "Carmen García", pais: "Peru", cargo: "Jefe de Comex" },
+                { nombre: "Kassandra Roman", pais: "Peru", cargo: "Asistente Comex" }
+            ]},
+            { nombre: "GRUPO 8", area: "Operaciones y Comex", paises: ["CO"], miembros: [
+                { nombre: "Andrés Garcia", pais: "Colombia", cargo: "Jefe Comex y Logistica" },
+                { nombre: "Sergio Perez", pais: "Colombia", cargo: "Analista Comex y Logistica" },
+                { nombre: "Maribel Soriano", pais: "Colombia", cargo: "Analista Comex y Logistica" }
+            ]},
+            { nombre: "GRUPO 9", area: "Control de Gestión", paises: ["CL"], miembros: [ 
+                { nombre: "Carolina Bustamante", pais: "Chile", cargo: "Jefa de Control de Gestión" },
+                { nombre: "Alberto Garces", pais: "Chile", cargo: "Analisita Control de Gestión" }
+            ]},
+            { nombre: "GRUPO 10", area: "TI / Soporte", paises: ["CL"], miembros: [ 
+                { nombre: "Leandro Jara", pais: "Chile", cargo: "Jefe de Operación y Soporte" }
+            ]},
+            { nombre: "GRUPO 11", area: "TI / Proyectos", paises: ["CL"], miembros: [ 
+                { nombre: "Hector Correa", pais: "Chile", cargo: "Jefe de Proyecto de TI" }
+            ]},
+            { nombre: "GRUPO 12", area: "TI / Proyecto SAP", paises: ["CL"], miembros: [ 
+                { nombre: "Oscar Sella", pais: "Chile", cargo: "Jefe Proyecto SAP" }
+            ]},
+            { nombre: "GRUPO 13", area: "Contabilidad (Chile)", paises: ["CL"], miembros: [ 
+                { nombre: "Hugo Riveros", pais: "Chile", cargo: "Jefe de Contabilidad" }
+            ]}
         ];
 
 
@@ -303,11 +352,33 @@
         function renderGroups() {
             const container = document.getElementById('content-groups');
             container.innerHTML = grupos.map(grupo => {
-                // Mapeo de países a píldoras de bandera
+                // Mapeo de países a píldoras de bandera (Header)
                 const paisesHTML = grupo.paises.map(pais => {
-                    const color = pais === "PE" ? "bg-red-500" : "bg-yellow-500";
+                    let color = "bg-gray-400"; // Default
+                    if (pais === "PE") color = "bg-red-500";
+                    if (pais === "CO") color = "bg-yellow-500";
+                    if (pais === "CL") color = "bg-blue-600"; // Color para Chile
                     return `<span class="pill ${color} text-white">${pais}</span>`;
                 }).join('');
+
+                // --- NUEVO: Mapeo de miembros a lista detallada ---
+                const miembrosHTML = grupo.miembros.map(miembro => {
+                    let paisColor = "bg-gray-200 text-gray-700"; // Default
+                    if (miembro.pais === "Peru") paisColor = "bg-red-100 text-red-700";
+                    if (miembro.pais === "Colombia") paisColor = "bg-yellow-100 text-yellow-700";
+                    if (miembro.pais === "Chile") paisColor = "bg-blue-100 text-blue-700";
+                    
+                    return `
+                        <li class="flex items-center justify-between py-1.5 border-b last:border-b-0">
+                            <span class="flex-1 mr-2">
+                                <span class="font-medium text-gray-800">${miembro.nombre.trim()}</span>
+                                <span class="block text-slate-600 italic">${miembro.cargo.trim()}</span>
+                            </span>
+                            <span class="font-semibold ${paisColor} py-0.5 px-2 rounded-full flex-shrink-0">${miembro.pais}</span>
+                        </li>
+                    `;
+                }).join('');
+                // --- FIN NUEVO ---
 
                 return `
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border-t-8 border-gray-400">
@@ -318,8 +389,12 @@
                             </div>
                         </div>
                         
-                        <p class="text-xl font-semibold text-blue-700 mb-3">${grupo.area}</p>
-                        <p class="text-gray-600 text-sm">${grupo.descripcion}</p>
+                        <p class="text-xl font-semibold text-blue-700 mb-4 pb-3 border-b">${grupo.area}</p>
+                        
+                        <!-- NUEVO: Lista de Miembros -->
+                        <ul class="space-y-0 text-xs">
+                            ${miembrosHTML}
+                        </ul>
                     </div>
                 `;
             }).join('');
