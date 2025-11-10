@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma y Grupos de Capacitación SAP S/4HANA</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de fuente Inter y colores personalizados -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; /* slate-100 */
+        }
+        .tab-button.active {
+            border-bottom: 3px solid #007bff; /* Un color primario llamativo */
+            color: #1e3a8a; /* Color de texto oscuro para el activo */
+            font-weight: 600;
+        }
+        .card-bg-fi { background-color: #e0f2fe; border-left: 5px solid #0ea5e9; } /* Light Blue (FI & General) */
+        .card-bg-mm { background-color: #fef3c7; border-left: 5px solid #f59e0b; } /* Light Yellow/Orange (MM) */
+        .card-bg-sd { background-color: #d1fae5; border-left: 5px solid #10b981; } /* Light Green (SD) */
+        /* Estilo para pills/badges */
+        .pill {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+            border-radius: 9999px; /* rounded-full */
+            font-size: 0.75rem; /* text-xs */
+            font-weight: 500;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto bg-white shadow-xl rounded-xl p-6 md:p-10">
+        <header class="mb-8 border-b pb-4">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800">
+                Plan de Capacitación SAP S/4HANA
+            </h1>
+            <p class="text-gray-500 mt-2">Cronograma de Workshops y Definición de Grupos para Perú y Colombia.</p>
+        </header>
+
+        <!-- Controles de Pestañas -->
+        <div class="flex border-b mb-6 sticky top-0 bg-white z-10">
+            <button id="tab-workshops" onclick="showTab('workshops')" class="tab-button py-3 px-4 text-lg text-gray-600 transition duration-300 hover:text-blue-700 active">
+                Workshops Programados
+            </button>
+            <button id="tab-groups" onclick="showTab('groups')" class="tab-button py-3 px-4 text-lg text-gray-600 transition duration-300 hover:text-blue-700">
+                Definición de Grupos
+            </button>
+        </div>
+
+        <!-- Contenido de Workshops -->
+        <div id="content-workshops" class="tab-content grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Renderizado dinámico de tarjetas de Workshops -->
+        </div>
+
+        <!-- Contenido de Grupos -->
+        <div id="content-groups" class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Renderizado dinámico de tarjetas de Grupos -->
+        </div>
+    </div>
+
+    <script>
+        // Datos de Workshops (Actualizados con la lista exacta proporcionada por el usuario)
+        const workshops = [
+            // --- Modulo General ---
+            {
+                tema: "Workshop SAP General",
+                modulo: "General",
+                fecha: "07/NOV (11:00)",
+                participantes: ["Todos"],
+                clase_css: "card-bg-fi",
+                resumen_link: null
+            },
+            // --- Módulo SAP FI ---
+            {
+                tema: "Workshop Contabilización",
+                modulo: "SAP FI",
+                fecha: "10/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 12"],
+                clase_css: "card-bg-fi",
+                resumen_link: "resumen_video_Capacitacion_SAP_Contabilizacion.html"
+            },
+            {
+                tema: "Workshop Controlling",
+                modulo: "SAP FI/CO",
+                fecha: "11/NOV (11:00)",
+                participantes: ["Grupo 1", "Grupo 2", "Grupo 9", "Grupo 12"],
+                clase_css: "card-bg-fi",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Cuentas por Cobrar",
+                modulo: "SAP FI",
+                fecha: "12/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 3", "Grupo 7", "Grupo 12"],
+                clase_css: "card-bg-fi",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Cuentas por Pagar",
+                modulo: "SAP FI",
+                fecha: "13/NOV (17:00)",
+                participantes: ["Grupo 2", "Grupo 3", "Grupo 7", "Grupo 8", "Grupo 12"],
+                clase_css: "card-bg-fi",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Activos Fijos",
+                modulo: "SAP FI",
+                fecha: "14/NOV",
+                participantes: ["Grupo 2", "Grupo 12"],
+                clase_css: "card-bg-fi",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Conciliación Bancaria",
+                modulo: "SAP FI",
+                fecha: "17/NOV (11:00) y 18/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 12"],
+                clase_css: "card-bg-fi",
+                resumen_link: null
+            },
+            // --- Módulo SAP SD ---
+            {
+                tema: "Workshop Crédito",
+                modulo: "SAP SD",
+                fecha: "19/NOV (9:00)",
+                participantes: ["Grupo 2", "Grupo 3", "Grupo 11"],
+                clase_css: "card-bg-sd",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Pedido Venta",
+                modulo: "SAP SD",
+                fecha: "19/NOV (11:00)",
+                participantes: ["Grupo 5", "Grupo 3", "Grupo 11"],
+                clase_css: "card-bg-sd",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Facturación",
+                modulo: "SAP SD",
+                fecha: "21/NOV y 24/NOV",
+                participantes: ["Grupo 2", "Grupo 3", "Grupo 11"],
+                clase_css: "card-bg-sd",
+                resumen_link: null
+            },
+            // --- Módulo SAP MM ---
+            {
+                tema: "Workshop Materiales",
+                modulo: "SAP MM",
+                fecha: "25/NOV (9:00)",
+                participantes: ["Grupo 4", "Grupo 6", "Grupo 8", "Grupo 10"],
+                clase_css: "card-bg-mm",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Business Partners",
+                modulo: "SAP MM",
+                fecha: "25/NOV (17:00)",
+                participantes: ["Grupo 2", "Grupo 4", "Grupo 10"],
+                clase_css: "card-bg-mm",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Lotes y Valoración",
+                modulo: "SAP MM",
+                fecha: "26/NOV (9:00)",
+                participantes: ["Grupo 2", "Grupo 4", "Grupo 6", "Grupo 8", "Grupo 10"],
+                clase_css: "card-bg-mm",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop OC",
+                modulo: "SAP MM",
+                // Grupos estandarizados por orden numérico: 2, 4, 5, 6, 7, 8, 10
+                fecha: "26/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 4", "Grupo 5", "Grupo 6", "Grupo 7", "Grupo 8", "Grupo 10"],
+                clase_css: "card-bg-mm",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop MIGO",
+                modulo: "SAP MM",
+                fecha: "27/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 4", "Grupo 6", "Grupo 8", "Grupo 10"],
+                clase_css: "card-bg-mm",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Maquilas",
+                modulo: "SAP MM",
+                fecha: "27/NOV (17:00)",
+                participantes: ["Grupo 2", "Grupo 4", "Grupo 6", "Grupo 8", "Grupo 10"],
+                clase_css: "card-bg-mm",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Inventario",
+                modulo: "SAP MM",
+                fecha: "28/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 4", "Grupo 6", "Grupo 8", "Grupo 10", "Grupo 13"],
+                clase_css: "card-bg-mm",
+                resumen_link: null
+            },
+        ];
+
+        // Datos de Grupos (Actualizados con la adición del GRUPO 13)
+        const grupos = [
+            { nombre: "GRUPO 1", area: "Líderes", descripcion: "Gerentes Generales de Perú y Colombia.", paises: ["PE", "CO"] },
+            { nombre: "GRUPO 2", area: "Finanzas y Contabilidad", descripcion: "Jefes, Analistas y Tesorería de Administración y Finanzas.", paises: ["PE", "CO"] },
+            { nombre: "GRUPO 3", area: "Facturación y Cobranza", descripcion: "Personal de Facturación, Crédito y Cobranza.", paises: ["PE", "CO"] },
+            { nombre: "GRUPO 4", area: "TI", descripcion: "Analistas Informáticos.", paises: ["PE"] },
+            { nombre: "GRUPO 5", area: "Comercial", descripcion: "Gerentes, KAMs y Ejecutivos de Venta de diferentes líneas.", paises: ["PE", "CO"] },
+            { nombre: "GRUPO 6", area: "Operaciones", descripcion: "Jefes y Asistentes de Operaciones (almacén, logística).", paises: ["PE"] },
+            { nombre: "GRUPO 7", area: "Comex", descripcion: "Jefes y Asistentes de Comercio Exterior.", paises: ["PE"] },
+            { nombre: "GRUPO 8", area: "Operaciones y Comex", descripcion: "Personal de Operaciones y Comex en Colombia.", paises: ["CO"] },
+            { nombre: "GRUPO 9", area: "Tesorería", descripcion: "Personal clave de Tesorería.", paises: ["PE", "CO"] },
+            { nombre: "GRUPO 10", area: "Facturación", descripcion: "Personal clave de Facturación.", paises: ["PE", "CO"] },
+            { nombre: "GRUPO 11", area: "Compras", descripcion: "Personal clave de Compras y Suministros.", paises: ["PE", "CO"] },
+            { nombre: "GRUPO 12", area: "Control", descripcion: "Control de Gestión / Lideres de Proceso para la validación final.", paises: ["PE", "CO"] },
+            { nombre: "GRUPO 13", area: "Inventario", descripcion: "Personal clave de Inventario y Control de Almacén.", paises: ["PE", "CO"] } // Nuevo grupo añadido
+        ];
+
+
+        /**
+         * Genera el HTML para las tarjetas de Workshops.
+         */
+        function renderWorkshops() {
+            const container = document.getElementById('content-workshops');
+            container.innerHTML = workshops.map(workshop => {
+                // Mapeo de grupos a píldoras (pills)
+                const pillsHTML = workshop.participantes.map(grupo => `
+                    <span class="pill bg-indigo-200 text-indigo-800">${grupo}</span>
+                `).join('');
+
+                // --- NUEVO: Lógica del Botón de Resumen ---
+                let buttonHTML = '';
+                const commonButtonClasses = "py-2 px-4 rounded-lg text-sm font-semibold text-center w-full block mt-5 transition duration-300";
+
+                if (workshop.resumen_link) {
+                    // Botón Activado
+                    buttonHTML = `
+                        <a href="${workshop.resumen_link}" 
+                           class="${commonButtonClasses} bg-blue-600 text-white hover:bg-blue-700 shadow-md hover:shadow-lg">
+                            Ver Video y Resumen
+                        </a>
+                    `;
+                } else {
+                    // Botón Desactivado
+                    buttonHTML = `
+                        <span class="${commonButtonClasses} bg-gray-200 text-gray-500 cursor-not-allowed opacity-75">
+                            Ver Video y Resumen
+                        </span>
+                    `;
+                }
+                // --- FIN Lógica del Botón ---
+
+                return `
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 ${workshop.clase_css} flex flex-col">
+                        
+                        <!-- Contenido principal de la tarjeta -->
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-4">
+                                <h2 class="text-xl font-bold text-gray-900">${workshop.tema}</h2>
+                                <span class="bg-gray-700 text-white text-xs font-semibold py-1 px-3 rounded-full uppercase tracking-wider">${workshop.modulo}</span>
+                            </div>
+                            
+                            <div class="space-y-2 mb-4">
+                                <p class="flex items-center text-sm font-medium text-gray-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    <span class="text-lg text-gray-800">${workshop.fecha}</span>
+                                </p>
+                            </div>
+                            
+                            <div class="border-t pt-3 mt-4">
+                                <p class="text-xs font-semibold text-gray-600 mb-2">Grupos Participantes:</p>
+                                <div class="flex flex-wrap">
+                                    ${pillsHTML}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botón (Alineado abajo) -->
+                        <div>
+                            ${buttonHTML}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        /**
+         * Genera el HTML para las tarjetas de Grupos.
+         */
+        function renderGroups() {
+            const container = document.getElementById('content-groups');
+            container.innerHTML = grupos.map(grupo => {
+                // Mapeo de países a píldoras de bandera
+                const paisesHTML = grupo.paises.map(pais => {
+                    const color = pais === "PE" ? "bg-red-500" : "bg-yellow-500";
+                    return `<span class="pill ${color} text-white">${pais}</span>`;
+                }).join('');
+
+                return `
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border-t-8 border-gray-400">
+                        <div class="flex justify-between items-start mb-4">
+                            <h2 class="text-2xl font-extrabold text-gray-800">${grupo.nombre}</h2>
+                            <div class="flex items-center">
+                                ${paisesHTML}
+                            </div>
+                        </div>
+                        
+                        <p class="text-xl font-semibold text-blue-700 mb-3">${grupo.area}</p>
+                        <p class="text-gray-600 text-sm">${grupo.descripcion}</p>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        /**
+         * Función para cambiar entre pestañas.
+         * @param {string} tabId - ID de la pestaña a mostrar ('workshops' o 'groups').
+         */
+        function showTab(tabId) {
+            const tabs = ['workshops', 'groups'];
+            
+            tabs.forEach(id => {
+                const content = document.getElementById(`content-${id}`);
+                const button = document.getElementById(`tab-${id}`);
+                
+                if (id === tabId) {
+                    content.classList.remove('hidden');
+                    button.classList.add('active');
+                } else {
+                    content.classList.add('hidden');
+                    button.classList.remove('active');
+                }
+            });
+        }
+
+        // Inicialización al cargar la página
+        window.onload = function() {
+            renderWorkshops();
+            renderGroups();
+            showTab('workshops'); // Muestra la pestaña de workshops por defecto
+        };
+    </script>
+
+</body>
+</html>
