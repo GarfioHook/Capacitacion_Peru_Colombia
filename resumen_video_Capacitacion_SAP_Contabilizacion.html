@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitacion SAP - Contabilizacion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: sans-serif; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 2rem; }
+    .section-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div class="container bg-white shadow-lg rounded-lg">
+    <header class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-gray-800">Capacitacion SAP - Contabilizacion</h1>
+      <p class="text-xl text-blue-600 font-semibold">R2R (Record-to-Report)</p>
+    </header>
+    <section class="mb-8">
+        <h2 class="section-title text-gray-700">Reproductor Interactivo</h2>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="w-full lg:w-2/3 bg-black rounded-lg overflow-hidden shadow-lg">
+                <video id="videoPlayer" width="100%" controls>
+                    <source src="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Videos%20Capacitacion%20S4/Capacitacion%20Peru-Colombia/Capacitación%20SAP%20S4%20-%20Workshop%20Contabilización-20251110_110526-Grabación%20de%20la%20reunión.mp4" type="video/mp4">
+                    Tu navegador no soporta video HTML5.
+                </video>
+            </div>
+            <div class="w-full lg:w-1/3">
+                <div class="h-full max-h-[450px] overflow-y-auto bg-gray-100 p-3 rounded-lg space-y-2">
+                    
+        <button onclick="goToTime(27)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Introducción al Módulo Financiero (FI)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:00:27
+            </p>
+        </button>
+    
+        <button onclick="goToTime(99)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Estructura Organizativa y Datos Maestros en FI</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:01:39
+            </p>
+        </button>
+    
+        <button onclick="goToTime(361)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Gestión de Múltiples Monedas</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:06:01
+            </p>
+        </button>
+    
+        <button onclick="goToTime(726)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Mantenimiento de Tipos de Cambio (OB08)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:12:06
+            </p>
+        </button>
+    
+        <button onclick="goToTime(1500)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Creación de Asiento Contable Manual (FB01)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:25:00
+            </p>
+        </button>
+    
+        <button onclick="goToTime(3724)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Revisión y Contabilización del Documento</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:02:04
+            </p>
+        </button>
+    
+        <button onclick="goToTime(3793)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Visualización de Documentos (FB03) y Gestión de Layouts</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:03:13
+            </p>
+        </button>
+    
+        <button onclick="goToTime(4863)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Concepto de Ledgers y Detalles de Auditoría</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:21:03
+            </p>
+        </button>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mb-8">
+      <h2 class="section-title text-gray-700">Resumen Temático</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Objetivo</h3><p>Capacitar en los conceptos fundamentales del módulo financiero (FI) de SAP S/4HANA, enfocándose en la creación de asientos contables manuales, la gestión de monedas y tipos de cambio, y la estructura organizativa financiera.</p></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Pasos del Proceso</h3><ul class="list-disc list-inside"><li>Comprensión de la estructura organizativa financiera, con la 'Sociedad' como elemento clave.</li><li>Gestión de múltiples monedas: Moneda Local, Moneda de Grupo (USD) y Moneda del Documento.</li><li>Mantenimiento de tipos de cambio utilizando la transacción OB08.</li><li>Creación de un asiento contable manual (documento financiero) con la transacción FB01.</li><li>Uso de Clases de Documento ('AB') y Claves de Contabilización (40 para Debe, 50 para Haber).</li><li>Revisión del documento a través del resumen antes de contabilizar.</li><li>Visualización del documento contabilizado con la transacción FB03.</li><li>Personalización de la visualización de reportes y documentos mediante 'Layouts' o 'Disposiciones'.</li></ul></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Transacciones SAP</h3><div class="flex flex-wrap gap-2"><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">OB08</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">FB01</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">FB02</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">FB03</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">MM01</span></div></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Puntos Clave</h3><ul class="list-disc list-inside"><li>El módulo Financiero (FI) es la médula del sistema, donde terminan la mayoría de los procesos logísticos.</li><li>La 'Sociedad' es el dato maestro principal para todos los procesos y reportes financieros.</li><li>SAP S/4HANA maneja una contabilidad multi-moneda, principalmente la moneda local, la moneda de grupo (USD) y la moneda del documento.</li><li>El sistema utiliza el último tipo de cambio cargado si no encuentra uno para la fecha de contabilización exacta.</li><li>La convención '1-2-3' es común en las transacciones SAP para Crear (ej. FB01), Modificar (FB02) y Visualizar (FB03).</li><li>Para asientos manuales, se utilizan la clase de documento 'AB' y las claves de contabilización '40' (Debe) y '50' (Haber).</li><li>Los documentos contabilizados no se modifican en sus valores o cuentas; deben ser anulados.</li><li>El sistema es altamente auditable, registrando usuario, fecha, hora y transacción de origen de cada documento.</li><li>Existen diferentes 'Ledgers' (libros contables) para cumplir con distintas normativas, como la contabilidad principal (IFRS) y la tributaria local.</li></ul></div>
+        <div class="md:col-span-2 bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Recomendaciones</h3><ul class="list-disc list-inside"><li>Mantener los tipos de cambio actualizados diariamente para asegurar la correcta valoración de las transacciones.</li><li>No compartir usuarios de SAP, ya que el sistema registra todos los accesos y puede generar costos de licenciamiento adicionales.</li><li>Utilizar la tecla F1 sobre cualquier campo para acceder a la ayuda detallada del sistema.</li><li>Revisar el resumen del documento ('Visualizar Resumen') antes de contabilizar para evitar errores, ya que las modificaciones posteriores son muy limitadas.</li><li>Aprovechar la funcionalidad de 'Layouts' para personalizar y guardar vistas de reportes que se ajusten a las necesidades individuales o del equipo.</li></ul></div>
+      </div>
+    </section>
+    <section>
+        <h2 class="section-title text-gray-700">Índice de Fragmentos</h2>
+        <table class="w-full text-left border-collapse">
+            <thead><tr class="bg-gray-200"><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Tema</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Descripción</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Timestamp</th></tr></thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Introducción al Módulo Financiero (FI)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se explica la importancia del módulo financiero como el núcleo del sistema SAP, donde convergen y se contabilizan los procesos de otros módulos como los logísticos.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(27)" class="text-blue-600 hover:underline">
+                            00:00:27 - 00:01:36
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Estructura Organizativa y Datos Maestros en FI</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se describe la 'Sociedad' como el principal elemento de la estructura organizativa en finanzas y dato maestro indispensable para cualquier transacción o reporte.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(99)" class="text-blue-600 hover:underline">
+                            00:01:39 - 00:03:38
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Gestión de Múltiples Monedas</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Explicación de los tres tipos de moneda en SAP: Moneda del Documento, Moneda Local y Moneda de Grupo (Dólar), y cómo interactúan en una transacción.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(361)" class="text-blue-600 hover:underline">
+                            00:06:01 - 00:09:43
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Mantenimiento de Tipos de Cambio (OB08)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Demostración práctica de cómo ingresar y mantener los tipos de cambio en el sistema usando la transacción OB08, destacando que solo un usuario puede acceder a la vez.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(726)" class="text-blue-600 hover:underline">
+                            00:12:06 - 00:22:12
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Creación de Asiento Contable Manual (FB01)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Proceso detallado para crear un documento contable manual, explicando los datos de cabecera, clase de documento ('AB'), y el uso de claves de contabilización '40' (Debe) y '50' (Haber).</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(1500)" class="text-blue-600 hover:underline">
+                            00:25:00 - 01:02:03
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Revisión y Contabilización del Documento</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se muestra cómo utilizar la función 'Visualizar Resumen' para revisar el asiento completo antes de su contabilización definitiva y se procede con el registro del documento.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(3724)" class="text-blue-600 hover:underline">
+                            01:02:04 - 01:03:12
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Visualización de Documentos (FB03) y Gestión de Layouts</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se explica cómo visualizar un documento ya contabilizado con la transacción FB03 y se ofrece una guía detallada sobre cómo personalizar, guardar y gestionar los 'Layouts' (disposiciones) para adaptar la vista de los datos.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(3793)" class="text-blue-600 hover:underline">
+                            01:03:13 - 01:21:01
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Concepto de Ledgers y Detalles de Auditoría</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Introducción al concepto de Ledgers (Libros Contables) para diferentes principios contables (ej. IFRS vs. Tributario) y cómo ver los detalles de auditoría en la cabecera del documento (autor, fecha, hora, transacción).</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(4863)" class="text-blue-600 hover:underline">
+                            01:21:03 - 01:26:48
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </div>
+  <script>
+    function goToTime(seconds) {
+      const video = document.getElementById('videoPlayer');
+      video.currentTime = seconds;
+      video.play();
+      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>
