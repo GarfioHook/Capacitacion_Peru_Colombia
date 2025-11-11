@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitacion SAP - Controlling</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: sans-serif; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 2rem; }
+    .section-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div class="container bg-white shadow-lg rounded-lg">
+    <header class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-gray-800">Capacitacion SAP - Controlling</h1>
+    </header>
+    <section class="mb-8">
+        <h2 class="section-title text-gray-700">Reproductor Interactivo</h2>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="w-full lg:w-2/3 bg-black rounded-lg overflow-hidden shadow-lg">
+                <video id="videoPlayer" width="100%" controls>
+                    <source src="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Workshop%20Controlling-20251111_110256-Grabaci%C3%B3n%20de%20la%20reuni%C3%B3n.mp4" type="video/mp4">
+                    Tu navegador no soporta video HTML5.
+                </video>
+            </div>
+            <div class="w-full lg:w-1/3">
+                <div class="h-full max-h-[450px] overflow-y-auto bg-gray-100 p-3 rounded-lg space-y-2">
+                    
+        <button onclick="goToTime(5)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Introducción al Módulo de Controlling (CO)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:00:05
+            </p>
+        </button>
+    
+        <button onclick="goToTime(151)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Estructura Organizativa: Sociedad CO (Controlling Area)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:02:31
+            </p>
+        </button>
+    
+        <button onclick="goToTime(296)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Dato Maestro: Centro de Beneficio (Profit Center)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:04:56
+            </p>
+        </button>
+    
+        <button onclick="goToTime(591)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Imputación Directa vs. Indirecta y Cierre de Periodo</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:09:51
+            </p>
+        </button>
+    
+        <button onclick="goToTime(925)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Dato Maestro: Centro de Costo y su Relación con el Profit Center</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:15:25
+            </p>
+        </button>
+    
+        <button onclick="goToTime(1313)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Jerarquía de Centros de Costo (OKENN)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:21:53
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2055)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Ejemplo Práctico: Contabilización de un Gasto en un Centro de Costo</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:34:15
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2532)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Reporte de Partidas Individuales de Centros de Costo (KSB1)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:42:12
+            </p>
+        </button>
+    
+        <button onclick="goToTime(3522)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Reportes de Partidas de Centros de Beneficio (KE5Z) y Cuentas de Mayor (FBL3N)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:58:42
+            </p>
+        </button>
+    
+        <button onclick="goToTime(4590)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Generación de Balances (F.01)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:16:30
+            </p>
+        </button>
+    
+        <button onclick="goToTime(5427)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Conclusiones y Próximos Pasos</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:30:27
+            </p>
+        </button>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mb-8">
+      <h2 class="section-title text-gray-700">Resumen Temático</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Objetivo</h3><p>Explicar los conceptos fundamentales y la estructura organizativa del módulo de Controlling (CO) en SAP S/4HANA, enfocándose en la gestión de la contabilidad interna, el análisis de rentabilidad y la reportería de costos y beneficios.</p></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Pasos del Proceso</h3><ul class="list-disc list-inside"><li>Comprender la estructura organizativa de CO, principalmente la Sociedad CO (Controlling Area).</li><li>Definir y utilizar los datos maestros clave: Centros de Beneficio (Profit Centers) para el análisis de rentabilidad y Centros de Costo (Cost Centers) para la captura de gastos.</li><li>Entender la relación jerárquica donde cada Centro de Costo se asigna a un Centro de Beneficio.</li><li>Diferenciar entre imputaciones de costos directas e indirectas, utilizando centros 'sin clasificar' para costos generales.</li><li>Realizar contabilizaciones de gastos, imputándolos a los Centros de Costo correspondientes.</li><li>Ejecutar el proceso de subreparto a fin de mes para distribuir los costos indirectos acumulados.</li><li>Generar y analizar reportes de partidas individuales por Centro de Costo y Centro de Beneficio.</li><li>Visualizar estados financieros como el balance general utilizando las estructuras de CO y FI.</li></ul></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Transacciones SAP</h3><div class="flex flex-wrap gap-2"><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">OKENN</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">KSB1</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">KE5Z</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">FB01</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">FBL3N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">F.01</span></div></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Puntos Clave</h3><ul class="list-disc list-inside"><li>El módulo de Controlling (CO) gestiona la contabilidad interna y el análisis de resultados, complementando a la contabilidad financiera (FI).</li><li>La estructura organizativa principal es la Sociedad CO ('Controlling Area'), que es única para todo el grupo empresarial (CO PJ) y permite la gestión cross-company.</li><li>Los Centros de Beneficio (CB) se usan para analizar la rentabilidad por línea de negocio o división y son compartidos entre empresas.</li><li>Los Centros de Costo (CECO) capturan gastos, definen responsabilidades sobre los mismos y son específicos para cada sociedad FI.</li><li>Al contabilizar un gasto en un Centro de Costo, el sistema deriva automáticamente el Centro de Beneficio asociado a dicho CECO.</li><li>Los ingresos y costos de venta se asocian a un Centro de Beneficio a través del maestro de materiales, mientras que los gastos generales se imputan a Centros de Costo.</li><li>Los costos indirectos (ej. factura de luz) se registran en centros de costo 'dummy' y se distribuyen al cierre del período mediante ciclos de subreparto.</li><li>Existen reportes específicos para analizar partidas individuales de Centros de Costo (KSB1) y Centros de Beneficio (KE5Z).</li></ul></div>
+        <div class="md:col-span-2 bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Recomendaciones</h3><ul class="list-disc list-inside"><li>Utilizar la jerarquía y los grupos de centros de costo en los reportes para simplificar el análisis y no tener que introducir rangos de centros de costo manualmente.</li><li>Definir una estructura de centros de costo que refleje claramente las áreas de responsabilidad de gasto dentro de la organización.</li><li>Centralizar la creación y mantenimiento de los datos maestros de centros de costo para asegurar la consistencia.</li><li>Personalizar y guardar layouts (variantes de visualización) en los reportes estándar para adaptarlos a las necesidades de análisis y agilizar su uso futuro.</li><li>Comprender la diferencia entre la contabilidad en moneda local y en moneda de grupo (dólar) para la correcta generación de reportes consolidados.</li></ul></div>
+      </div>
+    </section>
+    <section>
+        <h2 class="section-title text-gray-700">Índice de Fragmentos</h2>
+        <table class="w-full text-left border-collapse">
+            <thead><tr class="bg-gray-200"><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Tema</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Descripción</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Timestamp</th></tr></thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Introducción al Módulo de Controlling (CO)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Definición de Controlling como contabilidad de gestión, sus componentes principales como contabilidad de centros de beneficio, centros de costo, product costing y el análisis de rentabilidad (CO-PA).</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(5)" class="text-blue-600 hover:underline">
+                            00:00:05 - 00:02:26
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Estructura Organizativa: Sociedad CO (Controlling Area)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Explicación de la estructura organizativa principal en Controlling, la Sociedad CO (Controlling Area), y la definición de la sociedad única para el grupo: CO PJ.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(151)" class="text-blue-600 hover:underline">
+                            00:02:31 - 00:04:42
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Dato Maestro: Centro de Beneficio (Profit Center)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Definición del Centro de Beneficio como una unidad para analizar la rentabilidad. Se explica que es un dato maestro cross-company y su estructura basada en división y tipo de negocio.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(296)" class="text-blue-600 hover:underline">
+                            00:04:56 - 00:09:43
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Imputación Directa vs. Indirecta y Cierre de Periodo</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se introduce el concepto de imputación directa e indirecta de costos, el uso de centros de beneficio 'sin clasificar' y el proceso de subreparto al cierre del periodo para distribuir los costos indirectos.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(591)" class="text-blue-600 hover:underline">
+                            00:09:51 - 00:14:18
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Dato Maestro: Centro de Costo y su Relación con el Profit Center</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se explica el concepto de Centro de Costo (CECO) para registrar gastos y su relación clave: cada CECO se asigna a un Centro de Beneficio (CB), derivando este último automáticamente en las contabilizaciones.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(925)" class="text-blue-600 hover:underline">
+                            00:15:25 - 00:20:54
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Jerarquía de Centros de Costo (OKENN)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Demostración en el sistema de la jerarquía de centros de costo usando la transacción OKENN. Se explica cómo se agrupan los centros de costo por empresa y su utilidad para la reportería.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(1313)" class="text-blue-600 hover:underline">
+                            00:21:53 - 00:24:03
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Ejemplo Práctico: Contabilización de un Gasto en un Centro de Costo</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se realiza una contabilización de un gasto en el sistema, mostrando cómo se exige la imputación a un centro de costo para las cuentas de resultado.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2055)" class="text-blue-600 hover:underline">
+                            00:34:15 - 00:42:10
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Reporte de Partidas Individuales de Centros de Costo (KSB1)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Explicación y demostración del reporte KSB1 para visualizar las partidas individuales de los centros de costo. Se muestra cómo personalizar el layout y navegar al documento original.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2532)" class="text-blue-600 hover:underline">
+                            00:42:12 - 00:58:40
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Reportes de Partidas de Centros de Beneficio (KE5Z) y Cuentas de Mayor (FBL3N)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se introduce el reporte KE5Z para centros de beneficio y se demuestra en detalle el reporte FBL3N para visualizar partidas de cuentas de mayor desde la perspectiva de finanzas.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(3522)" class="text-blue-600 hover:underline">
+                            00:58:42 - 01:16:27
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Generación de Balances (F.01)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se explica cómo generar un balance con la transacción F.01, detallando parámetros como la estructura de balance, sociedad, ledger, y tipo de moneda. Se muestra la exportación a Excel.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(4590)" class="text-blue-600 hover:underline">
+                            01:16:30 - 01:30:26
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Conclusiones y Próximos Pasos</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Resumen de los conceptos clave y discusión sobre la gobernanza de los datos maestros, especialmente la creación y mantenimiento centralizado de los centros de costo.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(5427)" class="text-blue-600 hover:underline">
+                            01:30:27 - 01:36:52
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </div>
+  <script>
+    function goToTime(seconds) {
+      const video = document.getElementById('videoPlayer');
+      video.currentTime = seconds;
+      video.play();
+      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>
