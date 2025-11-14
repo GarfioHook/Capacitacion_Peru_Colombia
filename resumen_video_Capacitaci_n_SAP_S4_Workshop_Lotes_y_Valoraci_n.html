@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitación SAP S4 - Workshop Lotes y Valoración</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: sans-serif; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 2rem; }
+    .section-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div class="container bg-white shadow-lg rounded-lg">
+    <header class="text-center mt-8">
+      <h1 class="text-3xl font-bold text-gray-800">Capacitación SAP S4 - Workshop Lotes y Valoración</h1>
+    </header>
+    <section class="mt-8">
+        <h2 class="section-title text-gray-700">Reproductor Interactivo</h2>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="w-full lg:w-2/3 bg-black rounded-lg overflow-hidden shadow-lg">
+                <video id="videoPlayer" width="100%" controls>
+                    <source src="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Workshop%20Lotes%20y%20Valoraci%C3%B3n-20251114_113715-Grabaci%C3%B3n%20de%20la%20reuni%C3%B3n.mp4" type="video/mp4">
+                    Tu navegador no soporta video HTML5.
+                </video>
+            </div>
+            <div class="w-full lg:w-1/3">
+                <div class="h-full max-h-[450px] overflow-y-auto bg-gray-100 p-3 rounded-lg space-y-2">
+                    
+        <button onclick="goToTime(136)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Introducción al Flujo de Aprovisionamiento (P2P)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:02:16
+            </p>
+        </button>
+    
+        <button onclick="goToTime(44)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Creación y Atributos de Lotes (MSC1N)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:00:44
+            </p>
+        </button>
+        <button onclick="goToTime(2182)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Concepto de Valoración Separada (Split Valuation)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:36:22
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2587)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Introducción al Material Ledger y Trazabilidad</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:43:07
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2915)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Análisis de Precios de Material con la Transacción CKM3</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:48:35
+            </p>
+        </button>
+    
+        <button onclick="goToTime(3448)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Vínculo entre Lotes, Valoración Separada y Costos</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:57:28
+            </p>
+        </button>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="section-title text-gray-700">Documentos de Referencia</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a href="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Documentos%20de%20Referencia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Workshop%20Lotes%20y%20Valoraci%C3%B3n.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-4 bg-gray-100 rounded-lg shadow-sm hover:bg-blue-100 hover:shadow-md text-gray-800 font-medium transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span class="flex-1">Guía Sesión Lotes y Valoración</span>
+        </a>
+      </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="section-title text-gray-700">Resumen Temático</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Objetivo</h3><p>Capacitar sobre los conceptos de gestión de lotes y valoración de materiales en el contexto del proceso de aprovisionamiento (Procure-to-Pay), explicando cómo se crean los lotes, sus atributos, y cómo SAP S/4HANA calcula y rastrea los costos de los materiales mediante la valoración separada y el Material Ledger.</p></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Pasos del Proceso</h3><ul class="list-disc list-inside"><li>Creación de una orden de compra, especificando la clase de valoración del material.</li><li>Recepción de la mercancía (Entrada de Mercancía - EM), donde se crea o asigna un lote al producto.</li><li>Generación automática de documentos contables y del Material Ledger tras la entrada de mercancía.</li><li>Registro de la factura del proveedor.</li><li>Análisis de la valoración y costos del inventario a través de reportes específicos.</li></ul></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Transacciones SAP</h3><div class="flex flex-wrap gap-2"><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">MSC1N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">MSC2N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">MSC3N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">CKM3</span></div></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Puntos Clave</h3><ul class="list-disc list-inside"><li>La creación de lotes puede ser manual (MSC1N) antes de la recepción o automática durante la misma.</li><li>El 'Lote de Proveedor' es un atributo estándar importante para la trazabilidad.</li><li>La 'Valoración Separada' (Split Valuation) permite que un mismo material tenga múltiples costos según su origen o uso (ej. nacional vs. importado), gestionado por 'Clases de Valoración'.</li><li>El sistema utiliza el método de 'Precio Promedio Ponderado' para valorar el inventario.</li><li>La transacción CKM3 (Análisis de Precio de Material) ofrece una trazabilidad completa de cómo cada movimiento afecta el costo de un material, tanto en moneda local como en dólares.</li><li>Cada movimiento logístico (ej. entrada de mercancía) genera automáticamente un asiento contable y un registro en el 'Material Ledger', asegurando la integración y auditoría del inventario.</li></ul></div>
+        <div class="md:col-span-2 bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Recomendaciones</h3><ul class="list-disc list-inside"><li>Diferenciar claramente entre un 'atributo de lote' (información disponible en la recepción) y un 'atributo de material' (información necesaria al momento de la compra).</li><li>Utilizar las 'Clases de Valoración' de acuerdo a los principios contables y de negocio para no distorsionar los estados financieros.</li><li>Documentar los distintos casos de negocio (ej. múltiples fabricantes para un mismo producto) para definir el proceso correcto en SAP.</li><li>Considerar los costos de almacenamiento de datos antes de decidir adjuntar masivamente documentos (como certificados de análisis) directamente en SAP.</li></ul></div>
+      </div>
+    </section>
+    <section>
+        <h2 class="section-title text-gray-700">Índice de Fragmentos</h2>
+        <table class="w-full text-left border-collapse">
+            <thead><tr class="bg-gray-200"><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Tema</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Descripción</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Timestamp</th></tr></thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Introducción al Flujo de Aprovisionamiento (P2P)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Explicación general del proceso de aprovisionamiento: compra, registro de factura y entrada de mercancía como pasos logísticos y financieros que pueden ocurrir en momentos distintos.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(136)" class="text-blue-600 hover:underline">
+                            00:02:16 - 00:02:49
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Creación y Atributos de Lotes (MSC1N)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Demostración de la transacción MSC1N para la creación de lotes. Se explican los momentos de creación (antes o durante la entrada de mercancía) y se detallan los atributos estándar como fechas, lote de proveedor y país de origen.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(44)" class="text-blue-600 hover:underline">
+                            00:00:44 - 00:10:07
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Concepto de Valoración Separada (Split Valuation)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Introducción al concepto de 'Split Valuation', que permite asignar diferentes costos a un mismo material (ej. nacional vs. importado) mediante el uso de 'Clases de Valoración'.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2182)" class="text-blue-600 hover:underline">
+                            00:36:22 - 00:43:06
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Introducción al Material Ledger y Trazabilidad</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Explicación del 'Material Ledger' como el registro subyacente de todos los movimientos de materiales. Se muestra cómo una entrada de mercancía genera automáticamente documentos contables y de material, garantizando la trazabilidad desde la orden de compra.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2587)" class="text-blue-600 hover:underline">
+                            00:43:07 - 00:48:44
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Análisis de Precios de Material con la Transacción CKM3</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Demostración detallada de la transacción CKM3 para analizar la fluctuación del costo de un material. Se muestra cómo cada entrada de mercancía recalcula el precio promedio ponderado y cómo visualizar los costos en moneda local y en dólares.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2915)" class="text-blue-600 hover:underline">
+                            00:48:35 - 00:57:26
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Vínculo entre Lotes, Valoración Separada y Costos</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Resumen conceptual que conecta todos los temas: la orden de compra define la 'clase de valoración', la entrada de mercancía 'sella' el lote con esa clase, y al vender ese lote específico, se utiliza el costo correspondiente a su valoración.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(3448)" class="text-blue-600 hover:underline">
+                            00:57:28 - 00:59:41
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </div>
+  <script>
+    function goToTime(seconds) {
+      const video = document.getElementById('videoPlayer');
+      video.currentTime = seconds;
+      video.play();
+      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>
