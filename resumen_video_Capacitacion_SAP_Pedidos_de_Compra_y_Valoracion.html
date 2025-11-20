@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitacion SAP - Pedidos de Compra y Valoracion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: sans-serif; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 2rem; }
+    .section-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div class="container bg-white shadow-lg rounded-lg">
+    <header class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-gray-800">Capacitacion SAP - Pedidos de Compra y Valoracion</h1>
+      <p class="text-xl text-blue-600 font-semibold">P2P (Procure-to-Pay)</p>
+    </header>
+    <section class="mb-8">
+        <h2 class="section-title text-gray-700">Reproductor Interactivo</h2>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="w-full lg:w-2/3 bg-black rounded-lg overflow-hidden shadow-lg">
+                <video id="videoPlayer" width="100%" controls>
+                    <source src="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Pedidos%20de%20Compra-20251120_110445-Grabaci%C3%B3n%20de%20la%20reuni%C3%B3n.mp4" type="video/mp4">
+                    Tu navegador no soporta video HTML5.
+                </video>
+            </div>
+            <div class="w-full lg:w-1/3">
+                <div class="h-full max-h-[450px] overflow-y-auto bg-gray-100 p-3 rounded-lg space-y-2">
+                    
+        <button onclick="goToTime(12)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Introducción al Proceso de Aprovisionamiento (P2P)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:00:12
+            </p>
+        </button>
+    
+        <button onclick="goToTime(180)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Flujo Detallado: Solicitud, Cotización y Pedido</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:03:00
+            </p>
+        </button>
+    
+        <button onclick="goToTime(306)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Presentación de la Transacción de Pedido de Compra (ME21N)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:05:06
+            </p>
+        </button>
+    
+        <button onclick="goToTime(416)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Navegación en el Menú SAP para Crear Pedido</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:06:56
+            </p>
+        </button>
+    
+        <button onclick="goToTime(641)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Estructura de la Pantalla ME21N: Cabecera y Posiciones</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:10:41
+            </p>
+        </button>
+    
+        <button onclick="goToTime(804)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Ingreso de Datos de Cabecera del Pedido</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:13:24
+            </p>
+        </button>
+    
+        <button onclick="goToTime(1566)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Revisión de Pestañas de Cabecera</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:26:06
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2154)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Creación de Posiciones (Ítems) del Pedido</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:35:54
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2849)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Concepto Clave: Clase de Valoración</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:47:29
+            </p>
+        </button>
+    
+        <button onclick="goToTime(4761)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Costeo del Pedido: Condiciones de Precio</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:19:21
+            </p>
+        </button>
+    
+        <button onclick="goToTime(5897)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Manejo de Múltiples Entregas y Copia de Posiciones</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:38:17
+            </p>
+        </button>
+    
+        <button onclick="goToTime(6190)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Anulación de Pedidos de Compra</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:43:10
+            </p>
+        </button>
+    
+        <button onclick="goToTime(6426)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Diferencia entre Retener y Guardar un Pedido</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:47:06
+            </p>
+        </button>
+    
+        <button onclick="goToTime(6849)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Creación de Pedidos con Referencia</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:54:09
+            </p>
+        </button>
+    
+        <button onclick="goToTime(7091)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Reportes y Análisis de Pedidos de Compra</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:58:11
+            </p>
+        </button>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mb-8">
+      <h2 class="section-title text-gray-700">Resumen Temático</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Objetivo</h3><p>Capacitar a los usuarios en la creación de pedidos de compra en SAP S/4HANA utilizando la transacción ME21N, explicando su estructura, campos clave y su rol dentro del proceso de aprovisionamiento (Procure-to-Pay).</p></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Pasos del Proceso</h3><ul class="list-disc list-inside"><li>Identificación de la necesidad de compra.</li><li>Creación de una Solicitud de Pedido (Solped) (proceso opcional previo).</li><li>Obtención y registro de cotizaciones de proveedores (proceso opcional previo).</li><li>Creación del Pedido de Compra (ME21N), seleccionando clase de pedido y proveedor.</li><li>Ingreso de datos organizativos (Organización de compras, Grupo de compras, Sociedad).</li><li>Detalle de las posiciones (ítems) a comprar: material, cantidad, fecha de entrega y centro.</li><li>Asignación de la 'Clase de Valoración' a nivel de posición para determinar el costeo.</li><li>Especificación de las 'Condiciones de Precio' (costo del producto, fletes, etc.) para cada posición.</li><li>Verificación y guardado (o retención) del documento para enviarlo a aprobación.</li><li>Recepción de la mercancía (Entrada de Mercancía) y posterior registro de la factura del proveedor.</li></ul></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Transacciones SAP</h3><div class="flex flex-wrap gap-2"><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME21N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME22N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME23N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME80FN</span></div></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Puntos Clave</h3><ul class="list-disc list-inside"><li>La transacción ME21N es central para el proceso de aprovisionamiento y su estructura se divide en Cabecera, Posiciones y Detalle de Posición.</li><li>El Pedido de Compra es un documento formal que impacta la planificación; si no se va a ejecutar, sus posiciones deben ser borradas.</li><li>La 'Clase de Valoración' es un concepto disruptivo y fundamental que permite tener diferentes costos para un mismo material según el escenario de negocio (ej. distribución local vs. trading).</li><li>El costo del inventario se determina en el Pedido de Compra a través de las 'Condiciones de Precio' y se registra al momento de la entrada de mercancía, independientemente de la recepción de la factura.</li><li>La entrada de mercancía y el registro de la factura son procesos independientes que se referencian al Pedido de Compra.</li><li>El sistema no borra documentos, solo permite anular sus efectos marcando las posiciones para borrado.</li><li>La función 'Retener' permite guardar un borrador del pedido sin iniciar el flujo de aprobación, a diferencia de 'Guardar'.</li></ul></div>
+        <div class="md:col-span-2 bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Recomendaciones</h3><ul class="list-disc list-inside"><li>Ser riguroso y borrar las posiciones de los pedidos de compra que no se concretarán para no afectar la planificación.</li><li>Utilizar la función 'Copiar Posición' para crear eficientemente múltiples ítems con datos similares, cambiando solo la fecha de entrega u otros detalles.</li><li>Aprovechar la función 'Retener' para guardar pedidos incompletos sin enviarlos a aprobación.</li><li>Para crear pedidos recurrentes, usar el 'Resumen de documento' para buscar y copiar posiciones de pedidos anteriores.</li><li>Activar la opción 'Visualizar clave en listas desplegables' en la configuración de SAP para ver los códigos técnicos junto a las descripciones, facilitando la reportería.</li></ul></div>
+      </div>
+    </section>
+    <section>
+        <h2 class="section-title text-gray-700">Índice de Fragmentos</h2>
+        <table class="w-full text-left border-collapse">
+            <thead><tr class="bg-gray-200"><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Tema</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Descripción</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Timestamp</th></tr></thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Introducción al Proceso de Aprovisionamiento (P2P)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Presentación general del proceso de aprovisionamiento (compras) dentro del módulo MM de SAP, desde la identificación de una necesidad hasta la entrada de la mercancía.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(12)" class="text-blue-600 hover:underline">
+                            00:00:12 - 00:01:39
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Flujo Detallado: Solicitud, Cotización y Pedido</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Explicación del flujo estándar del proceso, comenzando con la Solicitud de Pedido (Solped), seguido de la cotización y culminando en la conversión a una Orden de Compra.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(180)" class="text-blue-600 hover:underline">
+                            00:03:00 - 00:04:25
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Presentación de la Transacción de Pedido de Compra (ME21N)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Introducción a la transacción principal ME21N para crear pedidos, y sus variantes ME22N (modificar) y ME23N (visualizar), destacando su potencia y complejidad.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(306)" class="text-blue-600 hover:underline">
+                            00:05:06 - 00:06:42
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Navegación en el Menú SAP para Crear Pedido</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Demostración de la ruta en el menú de SAP para acceder a la transacción de creación de pedidos de compra (ME21N).</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(416)" class="text-blue-600 hover:underline">
+                            00:06:56 - 00:10:15
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Estructura de la Pantalla ME21N: Cabecera y Posiciones</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Explicación de la estructura de la pantalla de creación de pedidos, dividida en tres secciones principales: Cabecera (datos generales), Resumen de Posiciones (ítems) y Detalle de Posición.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(641)" class="text-blue-600 hover:underline">
+                            00:10:41 - 00:13:19
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Ingreso de Datos de Cabecera del Pedido</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Paso a paso sobre cómo completar los datos de la cabecera, incluyendo la Clase de Pedido, el Proveedor y los Datos de Organización (Org. de Compras, Grupo de Compras, Sociedad).</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(804)" class="text-blue-600 hover:underline">
+                            00:13:24 - 00:21:18
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Revisión de Pestañas de Cabecera</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Recorrido por las diferentes pestañas de la cabecera del pedido, como 'Entrega/Factura' para condiciones de pago y moneda, y 'Datos adicionales' para Incoterms.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(1566)" class="text-blue-600 hover:underline">
+                            00:26:06 - 00:35:53
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Creación de Posiciones (Ítems) del Pedido</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Instrucciones para agregar los ítems al pedido, especificando material, cantidad, fecha de entrega, centro y almacén.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2154)" class="text-blue-600 hover:underline">
+                            00:35:54 - 00:44:02
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Concepto Clave: Clase de Valoración</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Explicación detallada y fundamental sobre la 'Clase de Valoración', que permite asignar diferentes costos a un mismo material según el tipo de operación (ej. distribución vs. trading), evitando promedios de costos no deseados.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2849)" class="text-blue-600 hover:underline">
+                            00:47:29 - 01:18:55
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Costeo del Pedido: Condiciones de Precio</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Análisis de la pestaña 'Condiciones', donde se construye el costo total del material agregando componentes como precio bruto, fletes y otros gastos. Se explica su impacto directo en la valoración del inventario.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(4761)" class="text-blue-600 hover:underline">
+                            01:19:21 - 01:26:06
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Manejo de Múltiples Entregas y Copia de Posiciones</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Técnica para gestionar pedidos con varias fechas de entrega, utilizando la función 'Copiar Posición' para duplicar ítems de manera eficiente y solo ajustar los datos necesarios.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(5897)" class="text-blue-600 hover:underline">
+                            01:38:17 - 01:40:47
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Anulación de Pedidos de Compra</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Aclaración de que los pedidos guardados no se pueden borrar. Para anularlos, se deben marcar para borrado todas sus posiciones (ítems).</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(6190)" class="text-blue-600 hover:underline">
+                            01:43:10 - 01:45:23
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Diferencia entre Retener y Guardar un Pedido</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Explicación de la función 'Retener' para guardar un pedido como borrador sin enviarlo a aprobación, en contraste con 'Guardar', que finaliza el documento.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(6426)" class="text-blue-600 hover:underline">
+                            01:47:06 - 01:48:52
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Creación de Pedidos con Referencia</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Demostración de cómo usar el 'Resumen de documento' para buscar un pedido anterior y copiar sus posiciones a un nuevo pedido, agilizando la creación de órdenes recurrentes.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(6849)" class="text-blue-600 hover:underline">
+                            01:54:09 - 01:57:47
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Reportes y Análisis de Pedidos de Compra</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Presentación de transacciones de reportería estándar para visualizar y analizar pedidos de compra, como ME2M (por material) y el reporte general ME80FN.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(7091)" class="text-blue-600 hover:underline">
+                            01:58:11 - 02:02:53
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </div>
+  <script>
+    function goToTime(seconds) {
+      const video = document.getElementById('videoPlayer');
+      video.currentTime = seconds;
+      video.play();
+      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>
