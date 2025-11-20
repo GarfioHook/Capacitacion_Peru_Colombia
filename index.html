@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cronograma de Capacitación SAP S/4HANA para PTM</title>
+    <title>Cronograma y Grupos de Capacitación SAP S/4HANA</title>
     <!-- Carga de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configuración de fuente Inter y colores personalizados -->
@@ -38,9 +38,9 @@
     <div class="max-w-7xl mx-auto bg-white shadow-xl rounded-xl p-6 md:p-10">
         <header class="mb-8 border-b pb-4">
             <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800">
-                Plan de Capacitación SAP S/4HANA para PTM
+                Plan de Capacitación SAP S/4HANA
             </h1>
-            <p class="text-gray-500 mt-2">Cronograma de Workshops.</p>
+            <p class="text-gray-500 mt-2">Cronograma de Workshops y Definición de Grupos para Perú y Colombia.</p>
         </header>
 
         <!-- Controles de Pestañas -->
@@ -69,111 +69,214 @@
         const workshops = [
             // --- Modulo General ---
             {
-                tema: "Workshop Onboarding",
+                tema: "Workshop SAP General",
                 modulo: "General",
-                fecha: "14/OCT",
-                participantes: ["GRUPO GENERAL"],
+                fecha: "07/NOV (11:00)",
+                participantes: ["Todos"],
                 clase_css: "card-bg-fi",
-                resumen_link: "resumen_video_Capacitacion_SAP_PTM_Onboarding.html"
+                resumen_link: "resumen_video_KickOff_Capacitacion_Peru_Colombia.html"
             },
             // --- Módulo SAP FI ---
             {
-                tema: "Workshop Pedido de Compra Nacional",
-                modulo: "SAP MM",
-                // Grupos estandarizados por orden numérico: 2, 4, 5, 6, 7, 8, 10
-                fecha: "15/OCT",
-                participantes: ["GRUPO GENERAL"],
-                clase_css: "card-bg-mm",
-                resumen_link: "resumen_video_Capacitacion_SAP_PTM_Compras_Nacionales.html"
-            },
-            {
-                tema: "Workshop Pedido de Compra Importacion y Valorizacion ",
-                modulo: "SAP MM",
-                // Grupos estandarizados por orden numérico: 2, 4, 5, 6, 7, 8, 10
-                fecha: "15/OCT",
-                participantes: ["GRUPO GENERAL"],
-                clase_css: "card-bg-mm",
-                resumen_link: "resumen_video_Capacitacion_SAP_PTM_Importaci_n_y_Costeo.html"
-            },
-            {
-                tema: "Workshop Repaso y Practica ",
-                modulo: "SAP MM",
-                // Grupos estandarizados por orden numérico: 2, 4, 5, 6, 7, 8, 10
-                fecha: "16/OCT",
-                participantes: ["GRUPO GENERAL"],
-                clase_css: "card-bg-mm",
-                resumen_link: null
-            },
-            {
                 tema: "Workshop Contabilización",
                 modulo: "SAP FI",
-                fecha: "17/OCT",
-                participantes: ["GRUPO GENERAL"],
+                fecha: "10/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 12"],
                 clase_css: "card-bg-fi",
-                resumen_link: "resumen_video_Capacitacion_SAP_PTM_Contabilizacion.html"
+                resumen_link: "resumen_video_Capacitacion_SAP_Contabilizacion.html"
             },
             {
-                tema: "Workshop Pedido de Compra No Valorada-ANSAC ",
-                modulo: "SAP MM",
-                // Grupos estandarizados por orden numérico: 2, 4, 5, 6, 7, 8, 10
-                fecha: "20/OCT",
-                participantes: ["GRUPO GENERAL"],
-                clase_css: "card-bg-mm",
-                resumen_link: "resumen_video_Capacitacion_SAP_PTM_Compra_No_Valorada_Negocio_ANSAC.html"
+                tema: "Workshop Controlling",
+                modulo: "SAP FI/CO",
+                fecha: "11/NOV (11:00)",
+                participantes: ["Grupo 1", "Grupo 2", "Grupo 9", "Grupo 12"],
+                clase_css: "card-bg-fi",
+                resumen_link: "resumen_video_Capacitacion_SAP_Controlling.html"
             },
             {
-                tema: "Workshop Entrada de Mercadería",
-                modulo: "SAP MM",
-                fecha: "20/OCT",
-                participantes: ["GRUPO GENERAL"],
-                clase_css: "card-bg-mm",
-                resumen_link: "resumen_video_Capacitacion_SAP_PTM_Entrada_de_Mercaderia.html"
+                tema: "Workshop Cuentas por Cobrar",
+                modulo: "SAP FI",
+                fecha: "12/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 3", "Grupo 7", "Grupo 12"],
+                clase_css: "card-bg-fi",
+                resumen_link: "resumen_video_Capacitaci_n_SAP_S4_Cuentas_por_Cobrar.html"
             },
             {
-                tema: "Workshop Practica - Entrada de Mercadería",
+                tema: "Workshop Materiales",
                 modulo: "SAP MM",
-                fecha: "21/OCT",
-                participantes: ["GRUPO GENERAL"],
+                fecha: "12/NOV (17:00)", // Correcto
+                participantes: ["Grupo 4", "Grupo 6", "Grupo 8", "Grupo 10"],
                 clase_css: "card-bg-mm",
-                resumen_link: "resumen_video_Capacitacion_SAP_PTM_Entrada_de_Mercaderia.html"
+                resumen_link: "resumen_video_Capacitaci_n_SAP_S4_Workshop_Materiales.html"
             },
             {
                 tema: "Workshop Business Partners",
                 modulo: "SAP MM",
-                fecha: "21/OCT",
-                participantes: ["GRUPO GENERAL"],
+                fecha: "13/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 4", "Grupo 10"],
                 clase_css: "card-bg-mm",
-                resumen_link: "resumen_video_Capacitacion_SAP_PTM_Creacion_Socios_de_Negocio_Clientes_Proveedores_.html"
+                resumen_link: "resumen_video_Capacitaci_n_SAP_S4_Workshop_Business_Partners.html"
             }, 
+            {
+                tema: "Workshop Lotes y Valoración",
+                modulo: "SAP MM",
+                fecha: "14/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 4", "Grupo 6", "Grupo 8", "Grupo 10"],
+                clase_css: "card-bg-mm",
+                resumen_link: "resumen_video_Capacitaci_n_SAP_S4_Workshop_Lotes_y_Valoraci_n.html"
+            },
+                        {
+                tema: "Workshop Pedido de Compra",
+                modulo: "SAP MM",
+                // Grupos estandarizados por orden numérico: 2, 4, 5, 6, 7, 8, 10
+                fecha: "18/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 4", "Grupo 5", "Grupo 6", "Grupo 7", "Grupo 8", "Grupo 10"],
+                clase_css: "card-bg-mm",
+                resumen_link: "resumen_video_Capacitacion_SAP_Pedidos_de_Compra_y_Valoracion.html"
+            },
+            {
+                tema: "Workshop Entrada de Mercadería",
+                modulo: "SAP MM",
+                fecha: "19/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 4", "Grupo 6", "Grupo 8", "Grupo 10"],
+                clase_css: "card-bg-mm",
+                resumen_link: null
+            },
+                        {
+                tema: "Workshop Cuentas por Pagar",
+                modulo: "SAP FI",
+                fecha: "19/NOV (17:00)",
+                participantes: ["Grupo 2", "Grupo 3", "Grupo 7", "Grupo 8", "Grupo 12"],
+                clase_css: "card-bg-fi",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Maquilas",
+                modulo: "SAP MM",
+                fecha: "20/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 4", "Grupo 6", "Grupo 8", "Grupo 10"],
+                clase_css: "card-bg-mm",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Inventario",
+                modulo: "SAP MM",
+                fecha: "21/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 4", "Grupo 6", "Grupo 8", "Grupo 10", "Grupo 13"],
+                clase_css: "card-bg-mm",
+                resumen_link: null
+            },           
+
+            // --- Módulo SAP SD ---
+            {
+                tema: "Workshop Crédito",
+                modulo: "SAP SD",
+                fecha: "24/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 3", "Grupo 11"],
+                clase_css: "card-bg-sd",
+                resumen_link: null
+            },
             {
                 tema: "Workshop Pedido Venta",
                 modulo: "SAP SD",
-                fecha: "TBD",
-                participantes: ["GRUPO GENERAL"],
+                fecha: "25/NOV (11:00)",
+                participantes: ["Grupo 5", "Grupo 3", "Grupo 11"],
                 clase_css: "card-bg-sd",
                 resumen_link: null
             },
             {
                 tema: "Workshop Facturación",
                 modulo: "SAP SD",
-                fecha: "TBD",
-                participantes: ["GRUPO GENERAL"],
+                fecha: "26/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 3", "Grupo 11"],
                 clase_css: "card-bg-sd",
                 resumen_link: null
             },
+            
+            {
+                tema: "Workshop Activos Fijos",
+                modulo: "SAP FI",
+                fecha: "27/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 12"],
+                clase_css: "card-bg-fi",
+                resumen_link: null
+            },
+            {
+                tema: "Workshop Conciliación Bancaria",
+                modulo: "SAP FI",
+                fecha: "28/NOV (11:00)",
+                participantes: ["Grupo 2", "Grupo 12"],
+                clase_css: "card-bg-fi",
+                resumen_link: null
+            },
+   
+
         ];
 
         // Datos de Grupos (Actualizados con la adición del GRUPO 13)
         const grupos = [
-            { nombre: "GRUPO GENERAL", area: "PTM", paises: ["CL"], miembros: [
-                { nombre: "Patricia Alejandra Sanz", pais: "Chile", cargo: "Lider Funcional PTM" },
-                { nombre: "Linda Valenzuela", pais: "Chile", cargo: "COMEX" },
-                { nombre: "Felipe Vidal", pais: "Chile", cargo: "Jefe COMEX" },
-                { nombre: "Romy Delgado", pais: "Chile", cargo: "Operaciones" },
-                { nombre: "Jonathan Muñoz", pais: "Chile", cargo: "Administracion Ventas" },
-                { nombre: "Luis Delgado", pais: "Chile", cargo: "Analista Contabilidad" },
-                { nombre: "Hugo Riveros", pais: "Chile", cargo: "Jefe Contabilidad" }
+            { nombre: "GRUPO 1", area: "Líderes", paises: ["PE", "CO"], miembros: [
+                { nombre: "Juan Molero", pais: "Peru", cargo: "Gerente General" },
+                { nombre: "Clara Juliana Gomez", pais: "Colombia", cargo: "Gerente General" }
             ]},
+            { nombre: "GRUPO 2", area: "Finanzas y Contabilidad", paises: ["PE", "CO"], miembros: [
+                { nombre: "Patricia Arista", pais: "Peru", cargo: "Jefe Administración y Finanzas" },
+                { nombre: "Carlos Cueto", pais: "Peru", cargo: "Analista Contable" },
+                { nombre: "Nadia Vega", pais: "Peru", cargo: "Tesoreria" },
+                { nombre: "Paola Ramirez", pais: "Colombia", cargo: "Jefe de Administración y Finanzas" },
+                { nombre: "Camila Castiblanco", pais: "Colombia", cargo: "Contador" },
+                { nombre: "Liliana Alvarado", pais: "Colombia", cargo: "Analista Contable" }
+            ]},
+            { nombre: "GRUPO 3", area: "Facturación y Cobranza", paises: ["PE", "CO"], miembros: [
+                { nombre: "Virginia Vazques", pais: "Peru", cargo: "Facturación y Cobranza" },
+                { nombre: "Margareth Pérez", pais: "Colombia", cargo: "Credito Cobranza" }
+            ]},
+            { nombre: "GRUPO 4", area: "TI", paises: ["PE"], miembros: [
+                { nombre: "Alonso Cuba", pais: "Peru", cargo: "Analista Informatico" }
+            ]},
+            { nombre: "GRUPO 5", area: "Comercial", paises: ["PE", "CO"], miembros: [
+                { nombre: "Shiro Nemotto", pais: "Peru", cargo: "Gerente Comercial" },
+                { nombre: "Yolanda Carpio", pais: "Peru", cargo: "KAM" },
+                { nombre: "Kelly Cuevas", pais: "Peru", cargo: "Gerente Linea Mineria" },
+                { nombre: "Ricardo Parra", pais: "Peru", cargo: "KAM Coa-Pu" },
+                { nombre: "TBA", pais: "Peru", cargo: "KAM Feed" },
+                { nombre: "Tania Malpartida", pais: "Peru", cargo: "KAM Plásticos" },
+                { nombre: "TBA", pais: "Peru", cargo: "Ejecutivo de Ventas" },
+                { nombre: "Diana Trujillo", pais: "Colombia", cargo: "Gerente de Comercial" },
+                { nombre: "Angela Restrepo", pais: "Colombia", cargo: "KAM Quimicos Industriales" },
+                { nombre: "Lina Caro", pais: "Colombia", cargo: "KAM Quimicos Industriales" },
+                { nombre: "Rafael Posada", pais: "Colombia", cargo: "KAM Plastico" },
+                { nombre: "Santiago Saavedra", pais: "Colombia", cargo: "KAM Coating y Aceites" }
+            ]},
+            { nombre: "GRUPO 6", area: "Operaciones", paises: ["PE"], miembros: [
+                { nombre: "Daniel Flores", pais: "Peru", cargo: "Jefe de Operaciones" },
+                { nombre: "Juan Angeles", pais: "Peru", cargo: "Asistente de Operaciones" }
+            ]},
+            { nombre: "GRUPO 7", area: "Comex", paises: ["PE"], miembros: [
+                { nombre: "Carmen García", pais: "Peru", cargo: "Jefe de Comex" },
+                { nombre: "Kassandra Roman", pais: "Peru", cargo: "Asistente Comex" }
+            ]},
+            { nombre: "GRUPO 8", area: "Operaciones y Comex", paises: ["CO"], miembros: [
+                { nombre: "Andrés Garcia", pais: "Colombia", cargo: "Jefe Comex y Logistica" },
+                { nombre: "Sergio Perez", pais: "Colombia", cargo: "Analista Comex y Logistica" },
+                { nombre: "Maribel Soriano", pais: "Colombia", cargo: "Analista Comex y Logistica" }
+            ]},
+            { nombre: "GRUPO 9", area: "Control de Gestión", paises: ["CL"], miembros: [ 
+                { nombre: "Carolina Bustamante", pais: "Chile", cargo: "Jefa de Control de Gestión" },
+                { nombre: "Alberto Garces", pais: "Chile", cargo: "Analisita Control de Gestión" }
+            ]},
+            { nombre: "GRUPO 10", area: "TI / Soporte", paises: ["CL"], miembros: [ 
+                { nombre: "Leandro Jara", pais: "Chile", cargo: "Jefe de Operación y Soporte" }
+            ]},
+            { nombre: "GRUPO 11", area: "TI / Proyectos", paises: ["CL"], miembros: [ 
+                { nombre: "Hector Correa", pais: "Chile", cargo: "Jefe de Proyecto de TI" }
+            ]},
+            { nombre: "GRUPO 12", area: "TI / Proyecto SAP", paises: ["CL"], miembros: [ 
+                { nombre: "Oscar Sella", pais: "Chile", cargo: "Jefe Proyecto SAP" }
+            ]},
+            { nombre: "GRUPO 13", area: "Contabilidad (Chile)", paises: ["CL"], miembros: [ 
+                { nombre: "Hugo Riveros", pais: "Chile", cargo: "Jefe de Contabilidad" }
+            ]}
         ];
 
 
