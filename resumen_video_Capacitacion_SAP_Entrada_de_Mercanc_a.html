@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitacion SAP - Entrada de Mercancía</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: sans-serif; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 2rem; }
+    .section-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div class="container bg-white shadow-lg rounded-lg">
+    <header class="text-center mt-8">
+      <h1 class="text-3xl font-bold text-gray-800">Capacitacion SAP - Entrada de Mercancía</h1>
+    </header>
+    <section class="mt-8">
+        <h2 class="section-title text-gray-700">Reproductor Interactivo</h2>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="w-full lg:w-2/3 bg-black rounded-lg overflow-hidden shadow-lg">
+                <video id="videoPlayer" width="100%" controls>
+                    <source src="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Entradas%20de%20Mercanc%C3%ADa-20251120_170342-Grabaci%C3%B3n%20de%20la%20reuni%C3%B3n.mp4" type="video/mp4">
+                    Tu navegador no soporta video HTML5.
+                </video>
+            </div>
+            <div class="w-full lg:w-1/3">
+                <div class="h-full max-h-[450px] overflow-y-auto bg-gray-100 p-3 rounded-lg space-y-2">
+                    
+        <button onclick="goToTime(30)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Introducción al Proceso de Entrada de Mercancía</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:00:30
+            </p>
+        </button>
+    
+        <button onclick="goToTime(171)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Presentación de la Transacción MIGO</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:02:51
+            </p>
+        </button>
+    
+        <button onclick="goToTime(596)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Demostración: Entrada de Mercancía en MIGO</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:09:56
+            </p>
+        </button>
+    
+        <button onclick="goToTime(1400)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Manejo de Cantidades e Indicador de Entrega Final</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:23:20
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2292)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Especificación de Almacén y Tipo de Stock</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:38:12
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2739)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Gestión de Lotes en la Entrada de Mercancía</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:45:39
+            </p>
+        </button>
+    
+        <button onclick="goToTime(3000)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Visualización del Documento y su Impacto Financiero</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:50:00
+            </p>
+        </button>
+    
+        <button onclick="goToTime(4105)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Anulación de una Entrada de Mercancía</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:08:25
+            </p>
+        </button>
+    
+        <button onclick="goToTime(4502)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Dividir una Posición para Múltiples Tipos de Stock</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:15:02
+            </p>
+        </button>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="section-title text-gray-700">Documentos de Referencia</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a href="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Documentos%20de%20Referencia/Capacitaci%C3%B3n%20SAP%20S4%20%E2%80%93%20Entrada%20de%20Mercanc%C3%ADas.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-4 bg-gray-100 rounded-lg shadow-sm hover:bg-blue-100 hover:shadow-md text-gray-800 font-medium transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span class="flex-1">Guía Sesión Pedidos de Compra y Clases de Valoración</span>
+        </a>
+      </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="section-title text-gray-700">Resumen Temático</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Objetivo</h3><p>Capacitar en el proceso de registro de entrada de mercancías (Goods Receipt) en SAP S/4HANA con referencia a un pedido de compra, utilizando la transacción MIGO y explicando su impacto logístico y financiero.</p></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Pasos del Proceso</h3><ul class="list-disc list-inside"><li>Iniciar la transacción MIGO para registrar un movimiento de mercancía.</li><li>Seleccionar la operación 'Entrada de mercancía' con referencia a un 'Pedido' (orden de compra).</li><li>Ingresar el número del pedido de compra para cargar las posiciones pendientes de recibir.</li><li>Gestionar las posiciones a recibir, ya sea la totalidad, una parte, o solo ítems específicos.</li><li>Completar los datos de cabecera, como la fecha de documento y la fecha de contabilización.</li><li>Ajustar los detalles de cada posición: cantidad realmente recibida, almacén de destino y tipo de stock (libre utilización, control de calidad, bloqueado).</li><li>Utilizar el 'Indicador de Entrega Final' para cerrar una posición si no se esperan más entregas.</li><li>Ingresar el lote del proveedor y permitir que el sistema genere el lote interno de SAP.</li><li>Verificar y contabilizar el documento, lo que genera un Documento de Material y un Documento Financiero asociado.</li><li>Visualizar y anular documentos de material en caso de error, generando un movimiento de anulación (inverso).</li></ul></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Transacciones SAP</h3><div class="flex flex-wrap gap-2"><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">MIGO</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME23N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">MD04</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">MMBE</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">MSC2N</span></div></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Puntos Clave</h3><ul class="list-disc list-inside"><li>La transacción MIGO es la herramienta centralizada en S/4HANA para todos los movimientos de mercancía, reemplazando transacciones antiguas como MB01, MB02 y MB03.</li><li>Una entrada de mercancía genera un 'Documento de Material' que registra el movimiento logístico y, si tiene implicancia valorada, un 'Documento Financiero' (asiento contable) de forma automática.</li><li>El sistema contabiliza automáticamente el aumento del inventario (mercadería) contra una cuenta transitoria de 'factura por recibir' (GR/IR).</li><li>Es fundamental registrar la cantidad física real que ingresa al almacén, no necesariamente la que indica la guía de despacho del proveedor.</li><li>El 'Indicador de Entrega Final' es crucial para la planificación (MRP), ya que informa al sistema que no se recibirán más cantidades para una posición de pedido, cerrándola efectivamente.</li><li>La mercancía puede ser recibida en diferentes tipos de stock: 'Libre utilización' (disponible para la venta), 'Control de calidad' o 'Bloqueado' (no disponible).</li><li>Un documento de material contabilizado no puede ser modificado ni eliminado; debe ser anulado a través de un movimiento inverso (ej. 102 para anular un 101).</li></ul></div>
+        <div class="md:col-span-2 bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Recomendaciones</h3><ul class="list-disc list-inside"><li>Realizar la entrada de mercancía únicamente cuando el producto está físicamente en la bodega y disponible, no cuando está en tránsito (ej. en el barco).</li><li>Utilizar correctamente el 'Indicador de Entrega Final' para mantener la integridad de los datos de planificación y evitar pedidos abiertos innecesariamente.</li><li>En caso de recibir cantidades parciales, no marcar la entrega final si se espera recibir el resto más adelante.</li><li>Para registrar mercancía dañada o no conforme, se puede dividir la posición del pedido en la MIGO para ingresar una parte como 'Bloqueado' y el resto como 'Libre utilización'.</li><li>Al anular una entrada y volver a registrarla, se recomienda reutilizar el número de lote SAP ya creado para mantener la trazabilidad y no duplicar datos maestros.</li></ul></div>
+      </div>
+    </section>
+    <section>
+        <h2 class="section-title text-gray-700">Índice de Fragmentos</h2>
+        <table class="w-full text-left border-collapse">
+            <thead><tr class="bg-gray-200"><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Tema</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Descripción</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Timestamp</th></tr></thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Introducción al Proceso de Entrada de Mercancía</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se explica que la entrada de mercancía sigue a la orden de compra en el proceso de aprovisionamiento y se enfatiza que el registro debe hacerse solo cuando el material está físicamente en la bodega.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(30)" class="text-blue-600 hover:underline">
+                            Iniciar en 00:00:30
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Presentación de la Transacción MIGO</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Introducción a la transacción MIGO como la herramienta central en S/4HANA para todos los movimientos de material (entradas, anulaciones, visualizaciones) y se define el concepto de 'Documento de Material'.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(171)" class="text-blue-600 hover:underline">
+                            Iniciar en 00:02:51
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Demostración: Entrada de Mercancía en MIGO</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Paso a paso de cómo realizar una entrada de mercancía con referencia a un pedido, seleccionando la operación, ingresando el número de pedido y explicando la estructura de cabecera y posiciones.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(596)" class="text-blue-600 hover:underline">
+                            Iniciar en 00:09:56
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Manejo de Cantidades e Indicador de Entrega Final</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se explica cómo gestionar diferentes escenarios de recepción de cantidades (completa, parcial, con discrepancias) y el uso del 'Indicador de Entrega Final' y su impacto en la planificación (MD04).</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(1400)" class="text-blue-600 hover:underline">
+                            Iniciar en 00:23:20
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Especificación de Almacén y Tipo de Stock</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se muestra cómo definir el almacén de destino y el tipo de stock (Libre Utilización, Control de Calidad, Bloqueado), especialmente para gestionar productos no conformes.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2292)" class="text-blue-600 hover:underline">
+                            Iniciar en 00:38:12
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Gestión de Lotes en la Entrada de Mercancía</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Explicación sobre la creación de lotes en MIGO. El sistema puede generar un lote interno automáticamente, y se puede registrar el lote del proveedor para trazabilidad.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2739)" class="text-blue-600 hover:underline">
+                            Iniciar en 00:45:39
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Visualización del Documento y su Impacto Financiero</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se demuestra cómo visualizar el documento de material creado y cómo este genera automáticamente un documento financiero (asiento contable), conectando el proceso logístico con el financiero.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(3000)" class="text-blue-600 hover:underline">
+                            Iniciar en 00:50:00
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Anulación de una Entrada de Mercancía</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se explica y demuestra el proceso de anulación de un documento de material en MIGO, que genera un movimiento inverso (ej. 102) para revertir tanto el stock como el asiento contable.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(4105)" class="text-blue-600 hover:underline">
+                            Iniciar en 01:08:25
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Dividir una Posición para Múltiples Tipos de Stock</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Demostración de cómo recibir una única posición de pedido en diferentes estados, por ejemplo, una parte como 'libre utilización' y otra como 'bloqueado', usando la función de repartir cantidades.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(4502)" class="text-blue-600 hover:underline">
+                            Iniciar en 01:15:02
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </div>
+  <script>
+    function goToTime(seconds) {
+      const video = document.getElementById('videoPlayer');
+      video.currentTime = seconds;
+      video.play();
+      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>
