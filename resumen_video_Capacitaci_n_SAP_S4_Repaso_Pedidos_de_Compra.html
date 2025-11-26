@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitación SAP S4 - Repaso Pedidos de Compra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: sans-serif; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 2rem; }
+    .section-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div class="container bg-white shadow-lg rounded-lg">
+    <header class="text-center mt-8">
+      <h1 class="text-3xl font-bold text-gray-800">Capacitación SAP S4 - Repaso Pedidos de Compra</h1>
+    </header>
+    <section class="mt-8">
+        <h2 class="section-title text-gray-700">Reproductor Interactivo</h2>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="w-full lg:w-2/3 bg-black rounded-lg overflow-hidden shadow-lg">
+                <video id="videoPlayer" width="100%" controls>
+                    <source src="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Repaso%20Pedido%20de%20Compra-20251126_110403-Grabaci%C3%B3n%20de%20la%20reuni%C3%B3n.mp4" type="video/mp4">
+                    Tu navegador no soporta video HTML5.
+                </video>
+            </div>
+            <div class="w-full lg:w-1/3">
+                <div class="h-full max-h-[450px] overflow-y-auto bg-gray-100 p-3 rounded-lg space-y-2">
+                    
+        <button onclick="goToTime(14)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Introducción y Objetivo de la Sesión</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:00:14
+            </p>
+        </button>
+    
+        <button onclick="goToTime(345)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Navegación y Estructura de la Transacción ME21N</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:05:45
+            </p>
+        </button>
+    
+        <button onclick="goToTime(565)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Llenado de Datos Esenciales del Pedido de Compra</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:09:25
+            </p>
+        </button>
+    
+        <button onclick="goToTime(1313)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Ejercicio Práctico y Gestión de Favoritos</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:21:53
+            </p>
+        </button>
+    
+        <button onclick="goToTime(1966)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Estrategia de Liberación de Pedidos</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:32:46
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2435)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Funciones Adicionales: Copiar y Retener Pedidos</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:40:35
+            </p>
+        </button>
+    
+        <button onclick="goToTime(3053)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Introducción al Costeo en el Pedido de Compra</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:50:53
+            </p>
+        </button>
+    
+        <button onclick="goToTime(3662)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Proceso de Provisión y Ajuste de Costos</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:01:02
+            </p>
+        </button>
+    
+        <button onclick="goToTime(4175)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Discusión de Casos de Negocio y Repaso Final</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:09:35
+            </p>
+        </button>
+    
+        <button onclick="goToTime(4914)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Repaso Detallado del Proceso de Creación de Pedido</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:21:54
+            </p>
+        </button>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="section-title text-gray-700">Documentos de Referencia</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a href="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Documentos%20de%20Referencia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Repaso%20Pedidos%20de%20Compra.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-4 bg-gray-100 rounded-lg shadow-sm hover:bg-blue-100 hover:shadow-md text-gray-800 font-medium transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span class="flex-1">Guía Sesión Repaso Pedidos de Compra</span>
+        </a>
+      </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="section-title text-gray-700">Resumen Temático</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Objetivo</h3><p>Capacitar a los usuarios en la creación de pedidos de compra en SAP S/4HANA utilizando la transacción ME21N, asegurando la comprensión de los conceptos básicos como la estructura del documento, datos maestros, el proceso de liberación y la introducción al costeo.</p></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Pasos del Proceso</h3><ul class="list-disc list-inside"><li>Acceder a la transacción ME21N.</li><li>Seleccionar la clase de pedido (ej. Importación).</li><li>Ingresar el proveedor y los datos organizativos (organización de compras, grupo de compras, sociedad).</li><li>Añadir los materiales en las posiciones, especificando cantidad, precio y centro.</li><li>Revisar y ajustar la clase de valoración según el tipo de compra (ej. distribución local, importación directa).</li><li>Verificar las condiciones de pago y la moneda en la cabecera.</li><li>Añadir los costos asociados (fletes, seguros) en la pestaña de condiciones.</li><li>Guardar el pedido para generar un número de documento, lo que puede activar una estrategia de liberación.</li></ul></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Transacciones SAP</h3><div class="flex flex-wrap gap-2"><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME21N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME22N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME23N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME29N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">MIGO</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">MIRO</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">FBL3N</span></div></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Puntos Clave</h3><ul class="list-disc list-inside"><li>La transacción ME21N centraliza la creación, modificación y visualización de pedidos de compra.</li><li>La estructura de los documentos se divide en cabecera (datos generales) y posiciones (detalles de materiales).</li><li>El grupo de compras es clave para determinar la responsabilidad y la estrategia de liberación (aprobación) del pedido.</li><li>El sistema propone automáticamente precios y condiciones basados en la última compra realizada al mismo proveedor para el mismo material.</li><li>El costeo de la importación (fletes, seguros) se realiza directamente en el pedido a través de clases de condición, determinando el valor final del inventario.</li><li>Un pedido puede nacer bloqueado y requerir liberación por parte de un responsable para poder ser procesado.</li><li>El sistema genera provisiones de costos automáticamente al momento de la entrada de mercancía (MIGO), las cuales se compensan al registrar las facturas (MIRO).</li></ul></div>
+        <div class="md:col-span-2 bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Recomendaciones</h3><ul class="list-disc list-inside"><li>Utilizar la función de 'Favoritos' para un acceso rápido y personalizado a las transacciones frecuentes.</li><li>Usar la función 'Retener' para guardar un borrador del pedido sin enviarlo a aprobación, evitando la pérdida de trabajo por inactividad.</li><li>Aprovechar la funcionalidad de 'Copiar' desde un pedido existente a través del 'Resumen de documento' para agilizar la creación de pedidos recurrentes.</li></ul></div>
+      </div>
+    </section>
+    <section>
+        <h2 class="section-title text-gray-700">Índice de Fragmentos</h2>
+        <table class="w-full text-left border-collapse">
+            <thead><tr class="bg-gray-200"><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Tema</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Descripción</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Timestamp</th></tr></thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Introducción y Objetivo de la Sesión</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">El instructor presenta la agenda, enfocada en repasar la creación de pedidos de compra como paso fundamental para la gestión de stock y el proceso comercial.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(14)" class="text-blue-600 hover:underline">
+                            00:00:14 - 00:04:21
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Navegación y Estructura de la Transacción ME21N</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se accede a la transacción ME21N y se explica su estructura fundamental: cabecera y posiciones. Se muestra cómo la misma transacción permite crear, modificar y visualizar documentos.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(345)" class="text-blue-600 hover:underline">
+                            00:05:45 - 00:09:16
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Llenado de Datos Esenciales del Pedido de Compra</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Demostración del llenado de los campos para crear un pedido: clase de pedido, proveedor, datos organizativos, material, cantidad, centro y clase de valoración, hasta el momento de guardar el documento.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(565)" class="text-blue-600 hover:underline">
+                            00:09:25 - 00:21:09
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Ejercicio Práctico y Gestión de Favoritos</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se solicita a los participantes que creen sus propias órdenes de compra y se explica cómo crear y gestionar favoritos para acceder rápidamente a las transacciones.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(1313)" class="text-blue-600 hover:underline">
+                            00:21:53 - 00:24:48
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Estrategia de Liberación de Pedidos</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se explica el concepto de la estrategia de liberación, mostrando la pestaña correspondiente y aclarando que un pedido bloqueado necesita ser aprobado (liberado) para continuar el proceso, mencionando la transacción ME29N.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(1966)" class="text-blue-600 hover:underline">
+                            00:32:46 - 00:37:39
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Funciones Adicionales: Copiar y Retener Pedidos</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se explican funciones útiles como copiar posiciones dentro de un pedido y usar el 'Resumen de documento' para copiar un pedido completo. Se refuerza la importancia de la función 'Retener' para guardar borradores.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2435)" class="text-blue-600 hover:underline">
+                            00:40:35 - 00:48:49
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Introducción al Costeo en el Pedido de Compra</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se introduce el concepto de costeo en la orden de compra a través de la pestaña 'Condiciones', mostrando cómo agregar elementos de costo como fletes y seguros para determinar el 'precio efectivo' del inventario.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(3053)" class="text-blue-600 hover:underline">
+                            00:50:53 - 01:00:49
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Proceso de Provisión y Ajuste de Costos</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se explica cómo el sistema genera provisiones automáticas de costos al hacer la entrada de mercancía (MIGO) y cómo las diferencias con la factura real (MIRO) ajustan el valor del inventario.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(3662)" class="text-blue-600 hover:underline">
+                            01:01:02 - 01:09:26
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Discusión de Casos de Negocio y Repaso Final</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se discuten casos prácticos, como el cambio de destino de un material y su impacto en el costeo. Se inicia una sesión de repaso para los participantes que lo necesiten.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(4175)" class="text-blue-600 hover:underline">
+                            01:09:35 - 01:21:19
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Repaso Detallado del Proceso de Creación de Pedido</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se realiza un segundo recorrido completo por el proceso de creación de un pedido de compra, explicando nuevamente el uso de favoritos, la estructura de la transacción y el llenado de datos hasta guardar el documento.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(4914)" class="text-blue-600 hover:underline">
+                            01:21:54 - 01:55:04
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </div>
+  <script>
+    function goToTime(seconds) {
+      const video = document.getElementById('videoPlayer');
+      video.currentTime = seconds;
+      video.play();
+      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>
