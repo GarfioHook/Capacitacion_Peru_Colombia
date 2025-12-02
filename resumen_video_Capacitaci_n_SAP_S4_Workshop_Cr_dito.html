@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitación SAP S4 - Workshop Crédito</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: sans-serif; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 2rem; }
+    .section-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div class="container bg-white shadow-lg rounded-lg">
+    <header class="text-center mt-8">
+      <h1 class="text-3xl font-bold text-gray-800">Capacitación SAP S4 - Workshop Crédito</h1>
+    </header>
+    <section class="mt-8">
+        <h2 class="section-title text-gray-700">Reproductor Interactivo</h2>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="w-full lg:w-2/3 bg-black rounded-lg overflow-hidden shadow-lg">
+                <video id="videoPlayer" width="100%" controls>
+                    <source src="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Workshop%20Cr%C3%A9dito-20251201_110655-Grabaci%C3%B3n%20de%20la%20reuni%C3%B3n.mp4" type="video/mp4">
+                    Tu navegador no soporta video HTML5.
+                </video>
+            </div>
+            <div class="w-full lg:w-1/3">
+                <div class="h-full max-h-[450px] overflow-y-auto bg-gray-100 p-3 rounded-lg space-y-2">
+                    
+        <button onclick="goToTime(51)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Introducción a SAP Credit Management en S/4HANA</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:00:51
+            </p>
+        </button>
+    
+        <button onclick="goToTime(144)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Configuración de Datos Generales de Crédito en el BP</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:02:24
+            </p>
+        </button>
+    
+        <button onclick="goToTime(947)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Configuración del Límite de Crédito por Segmento</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:15:47
+            </p>
+        </button>
+    
+        <button onclick="goToTime(1516)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Demostración de Verificación de Crédito en Pedido de Venta</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:25:16
+            </p>
+        </button>
+    
+        <button onclick="goToTime(1969)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Guía Práctica para Añadir la Función de Crédito a un BP</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:32:49
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2439)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Discusión sobre Carga de Datos y Resumen Final</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:40:39
+            </p>
+        </button>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="section-title text-gray-700">Documentos de Referencia</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a href="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Documentos%20de%20Referencia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Workshop%20Cr%C3%A9dito.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-4 bg-gray-100 rounded-lg shadow-sm hover:bg-blue-100 hover:shadow-md text-gray-800 font-medium transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span class="flex-1">Guía Sesión Crédito</span>
+        </a>
+      </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="section-title text-gray-700">Resumen Temático</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Objetivo</h3><p>Explicar el proceso de configuración y uso de la funcionalidad SAP Credit Management en S/4HANA, demostrando cómo gestionar el riesgo crediticio y los límites de los clientes a través del maestro de Business Partner (BP) para controlar la creación de pedidos de venta.</p></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Pasos del Proceso</h3><ul class="list-disc list-inside"><li>Acceder al Business Partner (BP) mediante la transacción BP.</li><li>Añadir la función 'SAP Credit Management' (UKM000) al BP en modo modificación.</li><li>Configurar los datos generales de crédito, principalmente la 'Clase de Riesgo' y el 'Grupo de Crédito'.</li><li>Acceder a los datos de 'Segmento de Crédito' para definir parámetros específicos por país o región.</li><li>Establecer manualmente el límite de crédito para el cliente en el segmento correspondiente.</li><li>Guardar la configuración en el maestro del BP.</li><li>Crear un pedido de venta para el cliente.</li><li>Verificar que el sistema ejecuta la comprobación de crédito y bloquea el pedido si el valor excede el límite establecido.</li></ul></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Transacciones SAP</h3><div class="flex flex-wrap gap-2"><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">BP</span></div></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Puntos Clave</h3><ul class="list-disc list-inside"><li>La gestión de crédito en S/4HANA se centraliza en el Business Partner (BP) a través de la función 'SAP Credit Management' (UKM000).</li><li>Existe una separación clave entre los 'Datos Generales' de crédito (como la clase de riesgo), que son globales para el cliente, y los 'Datos de Segmento' (como el límite de crédito), que son específicos para un área (ej. país).</li><li>El 'Segmento de Crédito' es la unidad organizativa principal para la gestión de límites y se configurará uno por país.</li><li>El límite de crédito se verifica automáticamente al crear o modificar un pedido de venta, bloqueándolo si se excede.</li><li>El sistema diferencia entre crédito 'comprometido' (por pedidos abiertos) y 'agotado' (por facturas emitidas).</li><li>La configuración inicial se enfoca en un enfoque manual para definir la clase de riesgo y el límite, aunque el sistema soporta cálculos automáticos avanzados.</li></ul></div>
+        <div class="md:col-span-2 bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Recomendaciones</h3><ul class="list-disc list-inside"><li>Para activar la gestión de crédito, es indispensable añadir la función 'UKM000' al Business Partner y pasar a modo 'Modificar' para poder configurarla.</li><li>Definir una política de crédito clara que determine las diferentes 'Clases de Riesgo' y 'Grupos de Crédito' a utilizar.</li><li>Asegurarse de establecer un límite de crédito específico en el segmento de crédito correcto (ej. segmento 3000 para Colombia) para que los controles sean efectivos.</li><li>Comenzar con un enfoque de gestión manual de límites para ganar experiencia antes de explorar las funcionalidades de cálculo automático.</li></ul></div>
+      </div>
+    </section>
+    <section>
+        <h2 class="section-title text-gray-700">Índice de Fragmentos</h2>
+        <table class="w-full text-left border-collapse">
+            <thead><tr class="bg-gray-200"><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Tema</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Descripción</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Timestamp</th></tr></thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Introducción a SAP Credit Management en S/4HANA</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se explica la evolución de la gestión de crédito, su nueva integración en el Business Partner (BP) y la introducción de la función 'SAP Credit Management' (UKM000).</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(51)" class="text-blue-600 hover:underline">
+                            00:00:51 - 00:02:12
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Configuración de Datos Generales de Crédito en el BP</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Demostración en la transacción BP de cómo acceder a la función de crédito y configurar los datos generales, como la 'Clase de Riesgo' y el 'Grupo de Crédito'.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(144)" class="text-blue-600 hover:underline">
+                            00:02:24 - 00:15:33
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Configuración del Límite de Crédito por Segmento</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Explicación del concepto de 'Segmento de Crédito' y el proceso para establecer un límite de crédito manual y específico para un cliente en un segmento determinado (país).</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(947)" class="text-blue-600 hover:underline">
+                            00:15:47 - 00:25:08
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Demostración de Verificación de Crédito en Pedido de Venta</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Creación de un pedido de venta que excede el límite de crédito, mostrando el mensaje de error 'Verificación de crédito sin éxito' y cómo el sistema bloquea la operación.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(1516)" class="text-blue-600 hover:underline">
+                            00:25:16 - 00:28:57
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Guía Práctica para Añadir la Función de Crédito a un BP</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Un usuario es guiado paso a paso para conmutar a modo modificación, añadir la función 'SAP Credit Management' y realizar la configuración básica de riesgo y límite.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(1969)" class="text-blue-600 hover:underline">
+                            00:32:49 - 00:39:55
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Discusión sobre Carga de Datos y Resumen Final</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se discuten los preparativos para la carga masiva de datos de crédito de los clientes y se realiza un resumen de los tres conceptos clave configurados.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2439)" class="text-blue-600 hover:underline">
+                            00:40:39 - 00:46:33
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </div>
+  <script>
+    function goToTime(seconds) {
+      const video = document.getElementById('videoPlayer');
+      video.currentTime = seconds;
+      video.play();
+      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>
