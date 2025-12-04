@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitación SAP - Workshop Facturación</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: sans-serif; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 2rem; }
+    .section-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div class="container bg-white shadow-lg rounded-lg">
+    <header class="text-center mt-8">
+      <h1 class="text-3xl font-bold text-gray-800">Capacitación SAP - Workshop Facturación</h1>
+    </header>
+    <section class="mt-8">
+        <h2 class="section-title text-gray-700">Reproductor Interactivo</h2>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="w-full lg:w-2/3 bg-black rounded-lg overflow-hidden shadow-lg">
+                <video id="videoPlayer" width="100%" controls>
+                    <source src="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Workshop%20Facturaci%C3%B3n-20251204_111152-Grabaci%C3%B3n%20de%20la%20reuni%C3%B3n.mp4" type="video/mp4">
+                    Tu navegador no soporta video HTML5.
+                </video>
+            </div>
+            <div class="w-full lg:w-1/3">
+                <div class="h-full max-h-[450px] overflow-y-auto bg-gray-100 p-3 rounded-lg space-y-2">
+                    
+        <button onclick="goToTime(6)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Introducción al Proceso de Expedición y Facturación</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:00:06
+            </p>
+        </button>
+    
+        <button onclick="goToTime(222)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Navegación en SAP y Simplificaciones del Proceso</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:03:42
+            </p>
+        </button>
+    
+        <button onclick="goToTime(359)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Creación de Entrega de Salida (VL01N)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:05:59
+            </p>
+        </button>
+    
+        <button onclick="goToTime(1179)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Monitor de Entregas Pendientes (VL10A)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:19:39
+            </p>
+        </button>
+    
+        <button onclick="goToTime(1596)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Ejecución de la Entrega y Salida de Mercancía</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:26:36
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2245)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Análisis del Flujo de Documentos</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:37:25
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2976)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Proceso de Facturación (VF01)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 00:49:36
+            </p>
+        </button>
+    
+        <button onclick="goToTime(3701)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Discusión sobre Facturación Electrónica y Casos Especiales</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:01:41
+            </p>
+        </button>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="mt-8">
+      <h2 class="section-title text-gray-700">Documentos de Referencia</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a href="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Documentos%20de%20Referencia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Workshop%20Facturaci%C3%B3n.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-4 bg-gray-100 rounded-lg shadow-sm hover:bg-blue-100 hover:shadow-md text-gray-800 font-medium transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span class="flex-1">Guía Sesión Facturación</span>
+        </a>
+      </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="section-title text-gray-700">Resumen Temático</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Objetivo</h3><p>Explicar y demostrar el proceso de expedición y facturación en SAP S/4HANA, que son los pasos posteriores a la creación de un pedido de venta en el ciclo Order-to-Cash (O2C).</p></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Pasos del Proceso</h3><ul class="list-disc list-inside"><li>Monitorear pedidos pendientes de entrega usando la transacción VL10A.</li><li>Crear la Entrega de Salida con referencia al pedido de venta (transacción VL01N).</li><li>Confirmar lote, almacén y cantidad en la entrega.</li><li>Contabilizar la Salida de Mercancía para registrar el costo de venta (COGS) y rebajar el inventario.</li><li>Crear el documento de facturación con referencia a la entrega de salida (transacción VF01).</li><li>Verificar el flujo de documentos completo para asegurar la trazabilidad del proceso.</li></ul></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Transacciones SAP</h3><div class="flex flex-wrap gap-2"><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">VA05</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">VL10A</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">VL01N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">VL02N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">VL03N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">VF01</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">VF03</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">MMBE</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">CKM3</span></div></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Puntos Clave</h3><ul class="list-disc list-inside"><li>El proceso O2C sigue un orden estricto: Pedido -> Expedición (Entrega) -> Facturación.</li><li>La transacción VL10A es el monitor central para gestionar las entregas pendientes, utilizando un sistema de semáforos.</li><li>La Salida de Mercancía (contabilizada desde la entrega) es el evento que mueve el inventario y genera el asiento de costo de venta (COGS).</li><li>La facturación (VF01) se crea con referencia a la Entrega de Salida, no al Pedido de Venta, y genera el asiento de ingreso y la cuenta por cobrar.</li><li>El Flujo de Documentos es una herramienta esencial para visualizar la relación y el estado de todos los documentos del ciclo (pedido, entrega, documento de material, factura).</li></ul></div>
+        <div class="md:col-span-2 bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Recomendaciones</h3><ul class="list-disc list-inside"><li>Utilizar la transacción VL10A para la gestión operativa de las entregas en lugar de la VA05.</li><li>Asegurarse de que los datos maestros del material y cliente estén completos (ej. puesto de expedición, centro de beneficio) para evitar errores.</li><li>Verificar siempre la 'fecha de salida de mercancía real' en la entrega para garantizar la correcta contabilización del costo, especialmente en cierres de mes.</li><li>Para analizar listados, aprovechar las funcionalidades de totalizar y subtotalizar para agrupar la información de manera eficiente.</li></ul></div>
+      </div>
+    </section>
+    <section>
+        <h2 class="section-title text-gray-700">Índice de Fragmentos</h2>
+        <table class="w-full text-left border-collapse">
+            <thead><tr class="bg-gray-200"><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Tema</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Descripción</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Timestamp</th></tr></thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Introducción al Proceso de Expedición y Facturación</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Presentación del flujo de ventas post-pedido, comparándolo con el proceso de compras y destacando el orden estricto: Pedido, Expedición y Facturación.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(6)" class="text-blue-600 hover:underline">
+                            00:00:06 - 00:02:11
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Navegación en SAP y Simplificaciones del Proceso</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Recorrido por el menú de SAP para Ventas, Expedición y Facturación. Se explica que subprocesos como picking, embalaje y gestión de transporte están simplificados.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(222)" class="text-blue-600 hover:underline">
+                            00:03:42 - 00:05:49
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Creación de Entrega de Salida (VL01N)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Introducción a la transacción VL01N para crear la entrega de salida, explicando campos clave como el puesto de expedición y la fecha de selección.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(359)" class="text-blue-600 hover:underline">
+                            00:05:59 - 00:09:16
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Monitor de Entregas Pendientes (VL10A)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Demostración de la transacción VL10A como la herramienta principal para monitorear pedidos pendientes de entrega, explicando el sistema de semáforos (rojo, amarillo, verde).</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(1179)" class="text-blue-600 hover:underline">
+                            00:19:39 - 00:26:18
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Ejecución de la Entrega y Salida de Mercancía</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Proceso práctico de creación de una entrega, asignación de lote, almacén y la contabilización de la salida de mercancía, que genera el movimiento de inventario y el asiento de costo.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(1596)" class="text-blue-600 hover:underline">
+                            00:26:36 - 00:37:16
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Análisis del Flujo de Documentos</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Uso de la función 'Flujo de Documentos' para visualizar la trazabilidad completa del proceso, desde el pedido de venta hasta la entrega y los documentos contables generados.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2245)" class="text-blue-600 hover:underline">
+                            00:37:25 - 00:49:22
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Proceso de Facturación (VF01)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Creación del documento de facturación con la transacción VF01, referenciando la entrega de salida. Se muestra el asiento contable de ingresos y cuentas por cobrar.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2976)" class="text-blue-600 hover:underline">
+                            00:49:36 - 01:01:23
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Discusión sobre Facturación Electrónica y Casos Especiales</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Sesión de preguntas y respuestas sobre la integración con entidades tributarias (facturación electrónica), manejo de fechas en cierres de mes y casos como muestras o ajustes.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(3701)" class="text-blue-600 hover:underline">
+                            01:01:41 - 01:41:20
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </div>
+  <script>
+    function goToTime(seconds) {
+      const video = document.getElementById('videoPlayer');
+      video.currentTime = seconds;
+      video.play();
+      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>
