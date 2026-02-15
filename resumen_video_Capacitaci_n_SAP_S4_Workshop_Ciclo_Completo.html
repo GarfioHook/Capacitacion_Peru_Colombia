@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitación SAP S4 - Workshop Ciclo Completo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: sans-serif; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 2rem; }
+    .section-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div class="container bg-white shadow-lg rounded-lg">
+    <header class="text-center mt-8">
+      <h1 class="text-3xl font-bold text-gray-800">Capacitación SAP S4 - Workshop Ciclo Completo</h1>
+    </header>
+    <section class="mt-8">
+        <h2 class="section-title text-gray-700">Reproductor Interactivo</h2>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="w-full lg:w-2/3 bg-black rounded-lg overflow-hidden shadow-lg">
+                <video id="videoPlayer" width="100%" controls>
+                    <source src="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Workshop%20Ciclo%20Completo-Grabaci%C3%B3n%20de%20la%20reuni%C3%B3n.mp4" type="video/mp4">
+                    Tu navegador no soporta video HTML5.
+                </video>
+            </div>
+            <div class="w-full lg:w-1/3">
+                <div class="h-full max-h-[450px] overflow-y-auto bg-gray-100 p-3 rounded-lg space-y-2">
+                    
+        <button onclick="goToTime(63)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Detección de Inconsistencias Entrada de Mercancía (ej. Sacos vs. Bolsas)</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 01:03
+            </p>
+        </button>
+    
+        <button onclick="goToTime(860)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Entrada de Mercancía MIGO</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 14:20
+            </p>
+        </button>
+    
+        <button onclick="goToTime(1180)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Entrega de Salida VL01N</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 19:40
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2250)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Contabilización de Salida de Mercancía VL02N</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 37:30
+            </p>
+        </button>
+    
+        <button onclick="goToTime(2630)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Verificación VA03</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 43:50
+            </p>
+        </button>
+
+        <button onclick="goToTime(2750)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Facturación al Cliente VF01</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 45:50
+            </p>
+        </button>
+    
+        <button onclick="goToTime(4415)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Revisión Post-Facturación y Cierre del Ciclo</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 73:35
+            </p>
+        </button>
+    
+        <button onclick="goToTime(4650)" class="w-full text-left p-3 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p class="font-semibold text-sm text-gray-800">Acciones Preventivas y Cierre de Sesión</p>
+            <p class="text-xs text-gray-500 flex items-center gap-1.5 pt-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Iniciar en 77:30
+            </p>
+        </button>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="section-title text-gray-700">Documentos de Referencia</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a href="https://pjypl.sharepoint.com/sites/PROYECTO_S4_PORTLAND-Definiciones/Shared%20Documents/Shared%20Documents/Sesiones%20de%20Capacitaci%C3%B3n/Peru-Colombia/Documentos%20de%20Referencia/Capacitaci%C3%B3n%20SAP%20S4%20-%20Workshop%20Ciclo%20Completo.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-4 bg-gray-100 rounded-lg shadow-sm hover:bg-blue-100 hover:shadow-md text-gray-800 font-medium transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span class="flex-1">Guía Sesión Ciclo Completo</span>
+        </a>
+      </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="section-title text-gray-700">Resumen Temático</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Objetivo</h3><p>Demostrar el ciclo logístico completo en SAP S/4HANA, desde la recepción de mercancía hasta la entrega y facturación a un cliente, enfatizando la integración entre módulos y la importancia de la consistencia de los datos maestros.</p></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Pasos del Proceso</h3><ul class="list-disc list-inside"><li>Intento de registro de Entrada de Mercancía y detección de inconsistencias en datos maestros (sacos vs. bolsas).</li><li>Registro de una Entrada de Mercancía exitosa para un segundo ejemplo (material 'Tea').</li><li>Búsqueda y modificación de un Pedido de Venta (VA05, VA02) para ajustar fechas y condiciones de pago.</li><li>Creación de la Entrega de Salida (VL01N) referenciando el Pedido de Venta.</li><li>Asignación de lote y contabilización de la Salida de Mercancía (VL02N), lo que genera el asiento de costo de venta.</li><li>Verificación del stock y la valoración del material en el Kardex (CKM3N).</li><li>Creación de la Factura al cliente (VF01) con referencia a la Entrega de Salida.</li><li>Revisión del flujo de documentos completo (VA03) para asegurar la trazabilidad.</li><li>Modificación del documento contable de la factura para añadir una referencia física.</li><li>Revisión de Órdenes de Compra abiertas (ME80FN) como acción preventiva.</li></ul></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Transacciones SAP</h3><div class="flex flex-wrap gap-2"><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME22N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">VA05</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">VA03</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">VL01N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">VL02N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">MIGO</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">FBL3N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">CKM3N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">VF01</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">FBL5N</span><span class="px-2 py-1 bg-yellow-200 text-yellow-800 text-sm font-semibold rounded-full">ME80FN</span></div></div>
+        <div class="bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Puntos Clave</h3><ul class="list-disc list-inside"><li>La consistencia de los datos maestros (descripción de materiales, direcciones de clientes, condiciones de pago) es fundamental para un proceso fluido.</li><li>El flujo de documentos de SAP proporciona una trazabilidad completa desde el pedido hasta la contabilidad.</li><li>La contabilización de la salida de mercancía actualiza el inventario y registra el costo de venta en tiempo real.</li><li>La entrada de mercancías genera provisiones contables que se saldan con la factura del proveedor (MIRO).</li><li>Es crucial corregir los datos en los documentos de origen (ej. Pedido de Venta) antes de procesar pasos subsecuentes (ej. Facturación) para evitar anulaciones complejas.</li></ul></div>
+        <div class="md:col-span-2 bg-gray-100 p-4 rounded-lg"><h3 class="font-bold text-lg mb-2">Recomendaciones</h3><ul class="list-disc list-inside"><li>Validar los datos de las órdenes de compra antes de registrar la entrada de mercancías para evitar discrepancias.</li><li>Asegurar que las direcciones de entrega (destinatario de mercancía) y condiciones de pago estén correctamente asignadas en el pedido de venta.</li><li>Utilizar la verificación de datos incompletos en la entrega para asegurar que se capture toda la información necesaria (ej. lote).</li><li>Añadir números de documentos físicos (guías, facturas) en los campos de referencia de SAP para facilitar la conciliación.</li><li>Revisar periódicamente las provisiones contables generadas por las entradas de mercancía.</li></ul></div>
+      </div>
+    </section>
+    <section>
+        <h2 class="section-title text-gray-700">Índice de Fragmentos</h2>
+        <table class="w-full text-left border-collapse">
+            <thead><tr class="bg-gray-200"><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Tema</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Descripción</th><th class="p-3 font-bold uppercase text-gray-600 border border-gray-300">Timestamp</th></tr></thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Caso Real:Problema en Entrada de Mercancía (Sacos vs. Bolsas)</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se intenta registrar una entrada de mercancía y se encuentra una discrepancia en la descripción del material entre la orden de compra y el producto físico. Se discute el problema y se decide abandonar el ejemplo.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(63)" class="text-blue-600 hover:underline">
+                            01:03 - 12:46
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Registro Exitoso de Entrada de Mercancía (Ejemplo 'Tea')</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se selecciona un nuevo ejemplo con el material 'Tea' y se completa exitosamente el proceso de entrada de mercancía, incluyendo la asignación de cantidades a diferentes tipos de stock y el cierre de la posición del pedido.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(860)" class="text-blue-600 hover:underline">
+                            14:20 - 19:40
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Proceso de Venta: Pedido y Entrega de Salida</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se inicia el ciclo de venta buscando un pedido (VA05), modificándolo (VA02) y creando la entrega de salida (VL01N). Se abordan temas como la asignación de lotes y la corrección de la dirección de entrega.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(1180)" class="text-blue-600 hover:underline">
+                            19:40 - 37:30
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Contabilización de Salida de Mercancía</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se contabiliza la salida de mercancía (VL02N), se modifica el documento de material para añadir referencias.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2250)" class="text-blue-600 hover:underline">
+                            37:30 - 43:50
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Verificación</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se verifica el impacto en el inventario y costos usando el flujo de documentos (VA03) y el kardex (CKM3N).</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2630)" class="text-blue-600 hover:underline">
+                            43:50 - 45:50
+                        </button>
+                    </td>                   
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Proceso de Facturación al Cliente</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">El área de facturación crea la factura (VF01). Se muestra cómo personalizar reportes (VA05) y se corrige una condición de pago incorrecta en el pedido de venta antes de poder generar la factura exitosamente.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(2750)" class="text-blue-600 hover:underline">
+                            45:50 - 73:35
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Revisión Post-Facturación y Cierre del Ciclo</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Se revisa el flujo de documentos completo, que ahora incluye la factura y el documento contable. Se muestra cómo modificar el documento contable para agregar el número de factura física como referencia.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(4415)" class="text-blue-600 hover:underline">
+                            73:35 - 77:30
+                        </button>
+                    </td>
+                </tr><tr class="hover:bg-gray-100">
+                    <td class="p-3 text-gray-800 border border-gray-300 font-medium">Acciones Preventivas y Cierre de Sesión</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">Para evitar problemas futuros, se utiliza la transacción ME80FN para listar y revisar todas las órdenes de compra abiertas, asegurando la correcta descripción de los materiales antes de futuros ingresos. Se finaliza la sesión.</td>
+                    <td class="p-3 text-gray-800 border border-gray-300">
+                        <button onclick="goToTime(4650)" class="text-blue-600 hover:underline">
+                            77:30 - 80:29
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </div>
+  <script>
+    function goToTime(seconds) {
+      const video = document.getElementById('videoPlayer');
+      video.currentTime = seconds;
+      video.play();
+      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>
